@@ -1,0 +1,403 @@
+{\rtf1\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green77\blue187;\red255\green255\blue0;\red0\green255\blue255;\red255\green0\blue0;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\f0\fs22\lang1033 # -*- coding: utf-8 -*-\par
+"""\par
+\cf1 Tuliskan Nama dan Nim Anda  \cf0\par
+"""\par
+import matplotlib.pyplot as plt\par
+import math as mt\par
+import numpy as np\par
+import copy\par
+import pandas as pd\par
+\par
+# MAIN PROGRAM\par
+
+\pard #\b INPUT: \b0\par
+# Number of Discretization (nMax)\par
+# Physical Condition Length of Geometry (L) \par
+# ratio of specific heat capacity\par
+nMax =  \highlight2     \highlight3\par
+\highlight0 L =  \highlight2       \highlight0     # Length of Nozzles\par
+gamma = 1.4   # Constant\par
+  \par
+# Define boundary condition\par
+# INLET condition in non-dimensional values\par
+rhoi = \highlight2    \highlight0    # non-dimensional inlet static density (rho/rho_t)\par
+Ti = \highlight2   \highlight0       # non-dimensional inlet static temperature (T/T_t)\par
+pi = rhoi*Ti # non-dimensional inlet static pressure (p inlet/ p_t)\par
+pe = \highlight2     \highlight0     # non-dimensional exit static pressure (p exit/p_t)\par
+\par
+#INPUT: MacCormack Iteration & Artificial Viscosity#\par
+# Artifical viscosity input\par
+# Time step input\par
+# Iteration input\par
+    C_x = 0.1               # Artificial viscosity constant    \par
+    C = 0.5                 # Courant number\par
+    maxIter = 3400          # number of iteration\par
+\par
+# residual variables\par
+    numiter = np.zeros(maxIter)\par
+    resRho = np.ones(maxIter)\par
+    resT = np.ones(maxIter)\par
+    resV = np.ones(maxIter)\par
+    resU = np.ones((maxIter, 3))\par
+\par
+# \b INITIALIZE VARIABLES \b0 #\par
+# Create in itial array\par
+\par
+X, A, p, rho, V, T, mDot, M, U, Up, Uc, F, Q, S, dUp, dUc, dUav = InitializeVariables(nMax)\par
+\par
+#\b INITIALIZATION\b0  --- #\par
+dx, X, A, rho, T, p, V, M, mDot, U = GenerateInitialCondition(X,A,rho,T,p,V,M,mDot,U,nMax,L, rhoi, Ti, pi, pe, gamma)\par
+\par
+
+\pard\par
+"Function"\par
+
+\pard\tx5940\cf4 def InitializeVariables(nMax):\cf0\par
+
+\pard     \cf1 # Definisikan primitive variables\cf0\par
+    X = np.zeros(nMax)  \cf1 #contoh variable posisi node\par
+\cf0\par
+
+\pard\fi-1232\li1232     \i #!!! Buat untuk variabel lain A [area], p [pressure], rho [density], V [velocity], T [Temperature], mDot [mass flow], M [Mach number]\par
+
+\pard\i0\par
+    \cf1 # Definikan compact variables\cf0\par
+    U = np.zeros((nMax, 3))\cf1 #contoh variable conservative U\cf0\par
+    F = np.zeros((nMax, 3))#\cf1 contoh variable Flux F\cf0  \par
+\par
+
+\pard\fi-1326\li1326     \i #!!!! Buat untuk variabel lain Up [predictor], Uc [corrector], Q [RHS], S [Articial], T [Temperature], dUp, dUc, dUav\i0\par
+
+\pard\par
+    return (X, A, p, rho, V, T, mDot, M, U, Up, Uc, F, Q, S, dUp, dUc, dUav)\par
+\par
+
+\pard # \b ITERATION PROCESS\b0\par
+    for iters in range(maxIter):\par
+        # resiudal temporary storage\par
+        rho_old = copy.deepcopy(rho)\par
+        V_old = copy.deepcopy(V)\par
+        T_old = copy.deepcopy(T)\par
+        U_old = copy.deepcopy(U)\par
+        \par
+   \b # Generate timestep\b0\par
+        dt = GenerateTimeStep(C, dx, T, V, nMax)\par
+        \par
+   # \b Right Boundary Condition for Predictor\b0\par
+     rho, T, p, V = RightBoundary(U,A,gamma,nMax)  \par
+\par
+   \b # Predictor loop\b0\par
+        U, Up, dUp, F, Q, S = PredictorLoop(U, Up, dUp, F, Q, S, A, rho, T, p, V, gamma, dt, dx, C_x, pe, nMax)\par
+        \par
+   # \b Left Boundary Condition for Corrector\b0\par
+     rho, T, p, V = Left(Up,A,gamma,nMax)  \b\par
+\par
+   # Corrector loop\par
+\b0         U, Uc = CorrectorLoop(U, Up, Uc, dUp, dUc, dUav, F, Q, S, A, rho, T, p, V, gamma, dt, dx, C_x, pe, nMax)\par
+\par
+   \b # Average values / Update values\par
+      \b0 U = UpdateValue(Up, Uc, nMax)\par
+\par
+   \b # Generate Residual\par
+\b0         numiter[iters] = iters+1\par
+        resRho[iters] = abs(np.sum(rho) - np.sum(rho_old))/np.sum(rho_old)\par
+        resT[iters]   = \highlight2               \highlight0       \par
+        resV[iters]   = \highlight2               \highlight0  \par
+        resU[iters,0] = \highlight2               \highlight0              \par
+        resU[iters,1] = \highlight2               \highlight0     \par
+        resU[iters,2] = \highlight2               \highlight0    \par
+
+\pard         \par
+
+\pard\par
+for i in range(nMax):\par
+     mDot[i] = \highlight2                 \highlight0     \par
+     M[i]    = \highlight2                 \highlight0  \par
+\par
+#Analytical \par
+Ansol = pd.read_csv("as.csv")\par
+ansol = np.array(Ansol)\par
+Tan = np.zeros((len(Ansol),1))\par
+for i in range(len(Ansol)):\par
+    Tan[i][0]=ansol[i][3]\par
+
+\pard\par
+\par
+\cf4 def GenerateInitialCondition\cf0 (X, A, rho, T, p, V, M, mDot, U, nMax, L, rhoi, Ti, pi, pe, gamma):\par
+    \par
+    # Initialize: Geometry value\par
+    #   Dicretization\par
+        dx =  \highlight2      \highlight0    \par
+    #   Position and Area\par
+    for i in range(nMax):\par
+        X[i] = i*dx\par
+        if X[i]<=L/2:\par
+            A[i] = \highlight2          \highlight0        \par
+        if X[i]>L/2:\par
+            A[i] = \highlight2          \highlight0\par
+\par
+    # Initialize: Computational variables\par
+    #   Primitive variables: rho, T, p, V, M, mDot\par
+    #   Compact variables: U\par
+    for i in range(nMax):\par
+        rho[i] = rhoi\par
+        T[i] = Ti\par
+\par
+
+\pard       # if (pe = 1), it means there is no flow.\par
+      # if (pe != 1), there is flow throughout nozzle\par
+
+\pard         if (pe==1.0):\par
+            p[i] = 1.0\par
+            V[i] = 0.0\par
+            M[i] = 0.0\par
+            mDot[i] = 0.0\par
+        else:\par
+            p[i] = \highlight2               \highlight0         \par
+            mDot[i] =  \highlight2           \highlight0       \par
+            V[i] =    \highlight2            \highlight0\par
+            M[i] =  \highlight2              \highlight0\par
+\par
+            U[i,0] =  \highlight2            \highlight0\par
+            U[i,1] =  \highlight2             \highlight0\par
+            U[i,2] =  \highlight2            \highlight0\par
+\par
+    return (dx, X, A, rho, T, p, V, M, mDot, U)                           \par
+\par
+def GenerateTimeStep(C, dx, T, V, nMax):\par
+    dt = 1.0\par
+\par
+    # Calculate time step\par
+    for i in range(nMax-1):\par
+        tTemp = \highlight2                \highlight0   \par
+        if (tTemp < dt):\par
+            dt = tTemp\par
+    return (dt)\par
+\par
+\par
+#Calculation: Compact Variable Flux: F\par
+def CalculateCVF(F, U, gamma, nMax):\par
+    for i in range(nMax):\par
+        F[i,0] =  \highlight2             \highlight0\par
+        F[i,1] =  \highlight2             \highlight0  \par
+        F[i,2] =  \highlight2             \highlight0\par
+\par
+    return (F)\par
+\par
+# \b Right Boundary Condition for Predictor\par
+
+\pard\b0 Def RightBoundary(U,A,gamma,nMax):  \par
+
+\pard\highlight2                                          \par
+                                         \highlight0\par
+return (rho, T, p, V)\par
+\par
+\b # Predictor Calculation\b0\par
+def PredictorLoop(U, Up, dUp, F, Q, S, A, rho, T, p, V, gamma, dt, dx, C_x, pe, nMax):\par
+    \par
+
+\pard      # Calculate primitive variables        \par
+    rho[i] =  \highlight2           \highlight0  \par
+    T[i] =    \highlight2           \highlight0   \par
+    p[i] =    \highlight2           \highlight0\par
+    V[i] =     \highlight2          \highlight0\par
+
+\pard\par
+    F = CalculateCVF(F, U, gamma, nMax)     \par
+    \par
+    for i in range(1,nMax-1):\par
+        \par
+        # Compact Variables: Q\par
+        Q[i,0] = \highlight2      \highlight0  \par
+        Q[i,1] = \highlight2      \highlight0    \par
+        Q[i,2] = \highlight2      \par
+\highlight0\par
+   # Flux for Predictor\par
+\par
+     S = ArtificialDiss(U,C_x,nMax)\par
+\par
+
+\pard         for j in range(3):\par
+
+\pard          \par
+            dUp[i,j] = \highlight2       \highlight0 # Gradient of intermediate solution\par
+            Up[i,j] = U[i,j] + dUp[i,j]*dt + S[i,j]         # Intermediate solution: U\par
+\par
+    return (U, Up, dUp, F, Q, S)\par
+\par
+\par
+
+\pard # \b Left Boundary Condition for Predictor\par
+\b0 Def LeftBoundary(Up,A,gamma,nMax):  \par
+\highlight2                                          \par
+                                         \highlight0\par
+
+\pard return (rho, T, p, V)\par
+\par
+
+\pard # \b Articial Dissipation for Predictor\par
+\b0 Def ArtificialDiss(Up,C_x,nMax): \par
+    for i in range(1,nMax-1):\par
+        D = \highlight2     \highlight0  # Factor for Aritificial Viscosity\par
+    for j in range(3):\par
+            S[i,j] = D*\highlight2          \highlight0   # Artificial Dissipation\par
+return (S)\par
+
+\pard\par
+\par
+\b # Corrector Calculation\b0\par
+def CorrectorLoop(U, Up, Uc, dUp, dUc, dUav, F, Q, S, A, rho, T, p, V, gamma, dt, dx, C_x, pe, nMax):\par
+    for i in range(1,nMax-1):\par
+        \par
+        # Compact Variables: Q\par
+        Q[i,0] =  \highlight2          \highlight0\par
+        Q[i,1] =  \highlight2          \highlight0\par
+        Q[i,2] =  \highlight2          \highlight0\par
+\par
+\par
+
+\pard S = ArtificialDiss(Up,C_x,nMax)\par
+
+\pard\par
+\par
+        for j in range(3):\par
+
+\pard             dUc[i,j] = \highlight2         \highlight0  # Gradient of corrector solution\par
+
+\pard             Uc[i,j] = Up[i,j] + dUc[i,j]*dt + S[i,j]\par
+            # Gradient of average solution\par
+    return (U,Uc)\par
+\par
+
+\pard # \b Articial Dissipation for Predictor\par
+\b0 Def ArtificialDiss(U,C_x,nMax): \par
+    for i in range(1,nMax-1):\par
+        D = \highlight2     \highlight0  # Factor for Aritificial Viscosity\par
+    for j in range(3):\par
+            S[i,j] = D*\highlight2          \highlight0   # Artificial Dissipation\par
+return (S)\par
+\par
+# \b UpdateValue\par
+\b0 Def UpdateValue(Up, Uc, nMax): \par
+   \highlight2                    \highlight0        \par
+   \highlight2                   \highlight0   \par
+return (U)\par
+
+\pard\par
+\par
+    \par
+\par
+\par
+#Plotting         \par
+r = np.zeros(nMax)\par
+for i in range(nMax):\par
+    r[i] = np.sqrt(4*A[i]/mt.pi)\par
+\par
+fig = plt.figure(figsize=(15,12))\par
+plt.title("Geometrical Input")\par
+plt.plot(X, r, 'r', label=r'$A(x) = \highlight2    \highlight0  \\ for \\ x<=1.5 \\ and \\ A(x) = \highlight2      \highlight0  \\ for \\ x>1.5$')\par
+plt.plot(X, -r, 'r')\par
+plt.ylabel(r"$r(x)$")\par
+plt.xlabel(r'$X*$')\par
+plt.legend(prop=\{"size":10\}, loc='upper center')\par
+plt.xlim(0, L)\par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+\par
+fig = plt.figure(figsize=(9,8))\par
+plt.suptitle("MacCormack Numerical Result")\par
+plt.subplot(411)\par
+plt.plot(X, p, color='r', linestyle='-', linewidth='1')\par
+plt.ylabel(r'$p*$')   \par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.subplot(412)\par
+plt.plot(X, rho, color='r', linestyle='-', linewidth='1')\par
+plt.ylabel(r'$\\rho*$')   \par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.subplot(413)\par
+plt.plot(X, T, color='r', linestyle='-', linewidth='1')\par
+plt.ylabel(r'$T*$')   \par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.subplot(414)\par
+plt.plot(X, M, color='r', linestyle='-', linewidth='1')\par
+plt.ylabel(r'$M$')   \par
+plt.xlabel(r'$X*$')\par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.show()\par
+      \par
+\par
+fig = plt.figure(figsize=(9, 6))\par
+plt.title("Numerical Residual")\par
+plt.plot(numiter, resRho, color='r', linestyle='-', linewidth='1', label=r'$|d\\rho/dt|_\{av\}$')\par
+plt.plot(numiter, resT, color='g', linestyle='--', linewidth='1', label=r'$|dT/dt|_\{av\}$')\par
+plt.plot(numiter, resV, color='b', linestyle='-.', linewidth='1', label=r'$|dV/dt|_\{av\}$')\par
+plt.legend(prop=\{"size":10\}, loc='upper right')\par
+plt.xlim(1, maxIter)\par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.ylabel("Residuals")\par
+\par
+fig = plt.figure(figsize=(9,8))\par
+plt.suptitle("Analytical Comparison")\par
+plt.subplot(411)\par
+plt.plot(X, p, color='r', linestyle='-', linewidth='1',label=r'$MacCormack$')\par
+plt.plot(X, Ansol.p, color='b', linestyle='-', linewidth='1',label=r'$Analytical$')\par
+plt.ylabel(r'$p*$')\par
+plt.legend(prop=\{"size":10\}, loc='lower right')   \par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.subplot(412)\par
+plt.plot(X, rho, color='r', linestyle='-', linewidth='1')\par
+plt.plot(X, Ansol.rho, color='b', linestyle='-', linewidth='1')\par
+plt.ylabel(r'$\\rho*$')   \par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.subplot(413)\par
+plt.plot(X, T, color='r', linestyle='-', linewidth='1')\par
+plt.plot(X, Tan, color='b', linestyle='-', linewidth='1')\par
+plt.ylabel(r'$T*$')   \par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.subplot(414)\par
+plt.plot(X, M, color='r', linestyle='-', linewidth='1')\par
+plt.plot(X, Ansol.M, color='b', linestyle='-', linewidth='1')\par
+plt.ylabel(r'$M$')   \par
+plt.xlabel(r'$X*$')\par
+plt.minorticks_on()\par
+plt.grid(b=True, which='major', color='0.65', linestyle='-')\par
+plt.grid(b=True, which='minor', color='0.65', linestyle='--')\par
+plt.xlim(0.0, L)\par
+\par
+plt.show()\par
+}
+ 

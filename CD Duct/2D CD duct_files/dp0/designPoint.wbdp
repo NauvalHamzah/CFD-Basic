@@ -1,0 +1,1083 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Storage>
+  <Project Version="7.1" />
+  <Addins>
+    <addin-list valType="String">[Ansys.ParameterManager.ParameterManagerAddin, Ansys.CFX.CFDPost.CFDPostAddin, Ansys.CFX.CFXCore.CFXCoreAddin, Ansys.Fluent.Addin, Ansys.Meshing.Core.Addin, Ansys.DesignModeler.Core.Addin]</addin-list>
+    <Addin Name="Ansys.ParameterManager.ParameterManagerAddin" Version="5.2" />
+    <Addin Name="Ansys.CFX.CFDPost.CFDPostAddin" Version="14.0.0.0" />
+    <Addin Name="Ansys.CFX.CFXCore.CFXCoreAddin" Version="16.0.0.1" />
+    <Addin Name="Ansys.Fluent.Addin" Version="16.0.0.1" />
+    <Addin Name="Ansys.Meshing.Core.Addin" Version="4.0.9.0" />
+    <Addin Name="Ansys.DesignModeler.Core.Addin" Version="3.0.1.0" />
+  </Addins>
+  <Containers>
+    <container-map valType="String">{"Scopes": Ansys.ParameterManager.ParameterManagerAddin:scopes, "Geometry": Ansys.DesignModeler.Core.Addin:Geometry, "Mesh": Ansys.Meshing.Core.Addin:SimulationModel, "Setup": Ansys.Fluent.Addin:SetupContainer, "Solution": Ansys.Fluent.Addin:SolutionContainer, "Results": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer, "Geometry 1": Ansys.DesignModeler.Core.Addin:Geometry, "Mesh 1": Ansys.Meshing.Core.Addin:SimulationModel, "Setup 1": Ansys.Fluent.Addin:SetupContainer, "Solution 1": Ansys.Fluent.Addin:SolutionContainer, "Results 1": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer, "Setup 3": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer, "Mesh 2": Ansys.Meshing.Core.Addin:SimulationModel, "Setup 2": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer, "Solution 2": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer, "Results 2": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer, "Solution 3": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer, "Results 3": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer, "Setup 4": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer, "Solution 4": Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer, "Results 4": Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer}</container-map>
+    <static-container-ids valType="String">{"Scopes": Scopes}</static-container-ids>
+    <Container Name="Scopes" Version="1.0">
+      <container-type valType="String">Ansys.ParameterManager.ParameterManagerAddin:scopes</container-type>
+      <static-id valType="String">Scopes</static-id>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 1314, "Input": 1315, "Output": 1314}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{}</last-update-regen-times>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Scopes/GlobalScope:GlobalScope" Version="1.0">
+        <class-type valType="String">GlobalScope</class-type>
+        <object-name valType="String">GlobalScope</object-name>
+        <member-data valType="String">{"DisplayText": "GlobalScope", "_fieldExpressionValidationContext": None, "functionProviders": [], "Parent": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Geometry" Version="1.0">
+      <container-type valType="String">Ansys.DesignModeler.Core.Addin:Geometry</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">2626</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7163, "Input": 2624, "Output": 2624}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{}</last-update-regen-times>
+      <unique-system-dir valType="String">Geom</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Geometry/Geometry:GeometryDataObject" Version="1.0">
+        <class-type valType="String">Geometry</class-type>
+        <object-name valType="String">GeometryDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": r"dp0\Geom\DM\Geom.agdb", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "", "GeomFileReference": $$3d76bfd7-3a19-4ebc-a6f0-073028478e01, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": False, "GeometryImportParameters": True, "GeometryImportParametersFilter": "DS", "GeometryImportCadAttributes": False, "GeometryImportCadAttributesFilter": "SDFEA;DDM", "GeometryImportNamedSelections": False, "GeometryImportNamedSelectionsFilter": "NS", "GeometryImportMaterialProperties": False, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": False, "GeometryImportWorkPoints": False, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": False, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportSTLSDTAlgorithm": "STLSDTAlgorithm_Curvatures", "GeometryImportSTLCurvatureAlgorithmSharpEdgesAngle": 30, "GeometryImportSTLCurvatureAlgorithmPlanesToleranceAngle": 0.5, "GeometryImportSTLCurvatureAlgorithmIgnoreSecondaryNodes": True, "GeometryImportSTLAngleAlgorithmCutAngle": 15, "GeometryImportSTLAngleAlgorithmToleranceAngle": 15, "GeometryImportSpaceClaimExplodeUnsharedComponents": False, "Guid": "5a660a74-e743-472d-87fa-67f28eb52f54", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$3d76bfd7-3a19-4ebc-a6f0-073028478e01": {"FilePathInDM": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\Geom\DM\Geom.agdb", "FilePathAfterRepair": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\Geom\DM\Geom.agdb", "IsFileRepaired": False, "CadSourceType": "DesignModeler"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
+        <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Geometry/TransferData:Geometry" Version="1.0">
+        <class-type valType="String">TransferData</class-type>
+        <object-name valType="String">Geometry</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["eeda8bc6-3323-451a-8040-0e2ab992f2c6", "f2c2fb4f-ce96-4cf9-88a6-85e2d8594da0"], "Data": $$2affcca6-c77d-4fb2-a67c-328293c4358a}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Mesh" Version="1.0">
+      <container-type valType="String">Ansys.Meshing.Core.Addin:SimulationModel</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6027</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6026, "Input": 6018, "Output": 6018}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 5939, "Setup": 5997, "Solution": 6005, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 4910, "Mesh 2": 5288, "Setup 2": 5303, "Solution 2": 5800, "Results 2": 5850, "Solution 3": 0, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SYS</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Mesh/SimulationConnection:SimulationConnection" Version="1.0">
+        <class-type valType="String">SimulationConnection</class-type>
+        <object-name valType="String">SimulationConnection</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationConnection", "_IsAssemblyMeshing": False, "_MeshingSolverSetting": 0, "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {}, "DSIdToDataReferenceMap": {"13": {"CellModel": $$69da6965-272d-412b-8d83-d0a92b143b63}, "12": {"CellModel": $$69da6965-272d-412b-8d83-d0a92b143b63}, "14": {"CellModel": $$69da6965-272d-412b-8d83-d0a92b143b63}}, "Attributes": {}}</member-data>
+      </Object>
+      <Object Name="/Mesh/MechanicalSystemType:SystemType for Any|Any|Any" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemType for Any|Any|Any</object-name>
+        <member-data valType="String">{"DisplayText": None, "PhysicsType": "Any", "AnalysisType": "Any", "SolverType": "Any", "PhysicsTypeDisplayString": "Any", "AnalysisTypeDisplayString": "Any", "SolverTypeDisplayString": "Any", "SystemTypeCombination": None, "DelimitedSystemTypeCominbation": None, "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": None, "SystemName": "SYS", "SystemID": "SYS", "ICEngineAutoSetup": False, "ICEngineMeshSettings": "Edit Mesh Settings", "ICEngineMeshPanelValues": "", "RefMeshSize": "0 [mm]"}</member-data>
+        <properties-setByUserFlag-data valType="String">["ICEngineMeshPanelValues", "ICEngineAutoSetup"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Mesh/MeshingMesh:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">MeshingMesh</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Caption": "Mesh", "MeshId": 14}</member-data>
+        <custom-data>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ImportedMeshFileType valType="String">4</ImportedMeshFileType>
+          <value-keys valType="String">{"AttentionRequired": System.Boolean, "ImportedMeshFileType": System.Int32}</value-keys>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap>
+            <dictionary-keys valType="String">[FluentMesh]</dictionary-keys>
+            <FluentMesh>
+              <Name valType="String">FluentMesh</Name>
+              <Guid0 valType="String">5acada04-4123-476b-b1ac-c730e5d7639c</Guid0>
+              <Data valType="String">ae25a240-fd28-4a40-83c8-115e84d07df1</Data>
+              <UpToDate valType="String">True</UpToDate>
+              <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "Data": System.String, "UpToDate": System.Boolean}</value-keys>
+            </FluentMesh>
+          </transferDataMap>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider" Version="1.0">
+        <class-type valType="String">MeshingGeneratedMeshOutputProvider</class-type>
+        <object-name valType="String">MeshingGeneratedMeshOutputProvider</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingGeneratedMeshOutputProvider", "DataConnections": [], "TransferDataObject": $$2cff8afd-673d-4094-9f75-8bfaf4179677, "VersionNumber": 1, "PMDBFile": None, "ACMOFile": None, "Mechdb": None, "UnitSystem": None}</member-data>
+      </Object>
+      <Object Name="/Mesh/OutputsGeneratedManagerDataEntityType:OutputsGeneratedManagerObject" Version="1.0">
+        <class-type valType="String">OutputsGeneratedManagerDataEntityType</class-type>
+        <object-name valType="String">OutputsGeneratedManagerObject</object-name>
+        <member-data valType="String">{"DisplayText": "OutputsGeneratedManagerObject", "outputGeneratedTimes": {"FluentMesh": 6018}}</member-data>
+      </Object>
+      <Object Name="/Mesh/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry": {"$$2affcca6-c77d-4fb2-a67c-328293c4358a": {"Geometry": ["eeda8bc6-3323-451a-8040-0e2ab992f2c6"]}}}}</member-data>
+      </Object>
+      <Object Name="/Mesh/MechanicalModel:MechanicalModel" Version="1.0">
+        <class-type valType="String">MechanicalModel</class-type>
+        <object-name valType="String">MechanicalModel</object-name>
+        <member-data valType="String">{"DisplayText": "MechanicalModel", "Caption": "Model", "File": $$918a3301-904b-4c3d-b8eb-3a94ea718a89, "EdaFile": None, "ModelId": 12, "PrototypeId": 13, "ModelHash": "2e6168e1-e300-48d5-8625-7889486cd158", "GeometryHash": "84d5b381-205b-4653-a740-2a7fb92d4d55", "IsResetNotRequired": False}</member-data>
+        <custom-data>
+          <File valType="String">918a3301-904b-4c3d-b8eb-3a94ea718a89</File>
+          <FilePath valType="String"></FilePath>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <IsModifiedDueToModelAssemblyPropertyChange valType="String">False</IsModifiedDueToModelAssemblyPropertyChange>
+          <AttachType valType="String">2</AttachType>
+          <value-keys valType="String">{"File": System.String, "FilePath": System.String, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "IsModifiedDueToModelAssemblyPropertyChange": System.Boolean, "AttachType": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh/MechanicalMeshFile:FluentMesh" Version="1.0">
+        <class-type valType="String">MechanicalMeshFile</class-type>
+        <object-name valType="String">FluentMesh</object-name>
+        <member-data valType="String">{"DisplayText": "FluentMesh", "TransferFile": $$61d41331-ed60-4d6d-acfe-63badbfb3cd0}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup" Version="1.0">
+      <container-type valType="String">Ansys.Fluent.Addin:SetupContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6091</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6090, "Input": 6090, "Output": 6090}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 5997, "Solution": 6005, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 4910, "Mesh 2": 5288, "Setup 2": 5303, "Solution 2": 5800, "Results 2": 5850, "Solution 3": 0, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">FLU</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup/SetupData:SetupData" Version="1.0">
+        <class-type valType="String">SetupData</class-type>
+        <object-name valType="String">SetupData</object-name>
+        <member-data valType="String">{"DisplayText": "SetupData", "UpstreamConnectionObjects": [{"UpstreamObjectReference": $$f3cc0971-eb03-49a6-85e0-88a8b32ca7a8, "guid": "5acada04-4123-476b-b1ac-c730e5d7639c", "ConnectionType": "FluentMesh", "FileReference": $$61d41331-ed60-4d6d-acfe-63badbfb3cd0}], "InputRefsToBeRemoved": [], "MeshReference": $$61d41331-ed60-4d6d-acfe-63badbfb3cd0, "UpstreamMeshReferences": [], "FileType": "Mesh", "_fluentSolution": $$aa0cdd59-98c2-4288-8bed-30d10fc43364, "SetupInfo": {"MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 5, "NodeCount": 210, "FaceCount": 347, "CellCount": 138, "PartitionCount": 3, "CellZones": [], "FaceZones": [], "DomainMinX": 0, "DomainMinY": 0, "DomainMinZ": 0, "DomainMaxX": 2, "DomainMaxY": 0.0631, "DomainMaxZ": 0, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": False}, "ModelInfo": {"rp_seg_": False, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": True, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": False, "rp_dual_time_": False, "rp_amg_": True, "rf_energy_": True, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": False, "rp_kklw_": False, "rp_kw_": False, "rp_lam_": True, "rp_les_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": False, "rp_turb_": False, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": False, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": False, "rp_double_": True, "rp_graphics_": True, "rp_host_": True, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": False}, "ModelSummary": {"Space": "Axisymmetric", "Time": "Steady", "Viscous": "Laminar", "Heat_Transfer": "Enabled", "Solidification_and_Melting": "Disabled", "Radiation": "None", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled"}}, "GenerateSetupOutput": True, "InputFileName": "SYS", "SetupGeneratedCaseFile": $$7adb7a06-21c9-49d9-afe2-eff6bce0c86d, "UserData": {"ModelInfoFile": $$78df9988-07f9-4fde-aa95-8e06f37f9a9d, "MeshOperations": '((expected-zone-names axis inlet outlet wall surface_body) (operations-list ((type . zone-type-change) (id . zone-type-change-1) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . pressure-inlet))) ((type . zone-type-change) (id . zone-type-change-2) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . mass-flow-inlet))) ((type . zone-type-change) (id . zone-type-change-3) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . pressure-inlet))) ((type . zone-type-change) (id . zone-type-change-4) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . mass-flow-inlet))) ((type . zone-type-change) (id . zone-type-change-5) (arg-pair ("Zone Name" . outlet) ("New Zone Type" . outflow))) ((type . zone-type-change) (id . zone-type-change-6) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . pressure-inlet))) ((type . zone-type-change) (id . zone-type-change-7) (arg-pair ("Zone Name" . outlet) ("New Zone Type" . pressure-outlet)))))', "BoundaryProfileFile": None, "CaseFile": None, "DataFile": None, "OtherInputFiles": {}, "IterationsSpecified": True, "UsingSolutionStrategy": False, "InitializationValid": True, "ModelInfoCompatible": True}, "ConnectionKey": "5acada04-4123-476b-b1ac-c730e5d7639c", "InputEntities": {}, "AnsoftXmlString": "", "StartupSchemeFileRef": None, "AnsoftSelectedData": {}, "MeshEntity": $$f3cc0971-eb03-49a6-85e0-88a8b32ca7a8, "CortexVarState": '((((gui-processing? #t) (surfaces/groups ((inlet (2)) (wall (0)) (axis (3)) (interior-surface_body (4)) (outlet (1)))) (cx-virtual-id-list (4196 4199 4200 4206 4207)) (cx-surface-id-map ((1 4207) (2 4206) (4 4200) (3 4199) (0 4196))) (cx-surface-type ((0 0) (3 0) (4 0) (2 0) (1 0))) (cx-surface-def-list ((4207 () (zone-surface 4207 7) #f) (4206 () (zone-surface 4206 6) #f) (4200 () (zone-surface 4200 1) #f) (4199 () (zone-surface 4199 5) #f) (4196 () (zone-surface 4196 8) #f))) (cx-surface-list #((0 ((zid 8) (type zone-surf) (name wall) (status susp) (facet-info (0 0 0 0)))) (1 ((zid 7) (type zone-surf) (name outlet) (status susp) (facet-info (0 0 0 0)))) (2 ((zid 6) (type zone-surf) (name inlet) (status susp) (facet-info (0 0 0 0)))) (3 ((zid 5) (type zone-surf) (name axis) (status susp) (facet-info (0 0 0 0)))) (4 ((zid 1) (type zone-surf) (name interior-surface_body) (status susp) (facet-info (0 0 0 0)))) #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f)) (xy/yfunction "mach-number") (xy/surfaces (3)) (view-list ((front ((1. 0.03155 5.25) (1. 0.03155 0.) (0. 1. 0.) 2.1 2.1 "perspective") #(1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1)) (back ((1. 0.03155 -5.25) (1. 0.03155 0.) (0. 1. 0.) 2.1 2.1 "perspective") #(1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1)))) (left-button-function mouse-zoom) (lights/headlight/on? #f) (render/surfaces (3 0)) (render/grid/surfaces (3 0)) (filled-grid? #f) (hidden-surfaces? #f) (axes/visible? #f) (cx-case-version (16 0 0))) (surface () (c0 ((xy/line/pattern "----"))))) (2 surface_body) (7 outlet) (6 inlet) (1 interior-surface_body) (5 axis) (8 wall))'}</member-data>
+      </Object>
+      <Object Name="/Setup/FluentLauncherSettings:RunSettings" Version="1.0">
+        <class-type valType="String">FluentLauncherSettings</class-type>
+        <object-name valType="String">RunSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Fluent Launcher Settings", "UseUpstreamLauncherSettings": True, "Dimension": "TwoD", "Precision": "Double", "Initialization": "ProgramControlled", "InitSolutionDataFile": "", "ShowLauncher": True, "DisplayMesh": True, "EmbedGraphicsWindows": True, "WorkbenchColorScheme": True, "UseJobScheduler": False, "FluentRootEnv": "$(FLUENT_ROOT)", "UseJournalFile": False, "JournalFile": "", "SetupCompilationEnvironment": True, "UDFPath": r"$(FLUENT_ROOT)\$(ARCH)\udf.bat", "EnvPath": {}, "PrePostOnly": False, "RunParallel": True, "NumberOfProcessorsMeshing": 1, "NumberOfProcessors": 3, "NumberOfGPGPUs": 0, "Interconnect": "default", "MpiType": "default", "UseSharedMemory": True, "MachineSpec": "MachineList", "MachineList": "", "MachineFileName": "", "CachePassword": False, "ConvertUNCPath": False, "ClusterHeadNode": "", "ClusterJobTemplate": "", "ClusterNodeGroup": "", "ClusterProcessorUnit": "Core", "StartWhenResourcesAvailable": False, "CreateJobSubmissionXML": False, "JobSubmissionXmlFile": "", "JobScheduler": "LSF", "UseLSFQueue": False, "LSFQueue": "", "UseLSFCheckpoint": False, "UseCheckpointDirectory": False, "LSFCheckpointDirectory": "", "LSFUseAutomaticCheckpointing": True, "LSFCheckpointPeriod": 60, "SGEQMaster": "localhost", "SGEQueue": "", "SGEPE": "", "SGEUseSettings": False, "SGESettings": "", "RemoteRunOnLinux": False, "RemoteFluentRootPath": "", "RemoteRshCommand": "SSH", "RemoteUseHost": False, "RemoteHostName": "", "RemoteUseWorkingDirectory": False, "RemoteWorkingDirectory": "", "RemoteRshOtherCommand": ""}</member-data>
+        <properties-setByUserFlag-data valType="String">["ShowLauncher", "DisplayMesh", "EmbedGraphicsWindows", "WorkbenchColorScheme", "SetupCompilationEnvironment", "Precision", "RunParallel", "NumberOfProcessors"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup/FluentSetup:SetupDataProvider" Version="1.0">
+        <class-type valType="String">FluentSetup</class-type>
+        <object-name valType="String">SetupDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SetupDataProvider", "DataSourceRef": None}</member-data>
+      </Object>
+      <Object Name="/Setup/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution" Version="1.0">
+      <container-type valType="String">Ansys.Fluent.Addin:SolutionContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6064</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6100, "Input": 6083, "Output": 6092}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 4910, "Mesh 2": 5288, "Setup 2": 5303, "Solution 2": 5800, "Results 2": 5850, "Solution 3": 0, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">FLU</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution/FluentSolutionProperties:SolutionData" Version="1.0">
+        <class-type valType="String">FluentSolutionProperties</class-type>
+        <object-name valType="String">SolutionData</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionData", "UpstreamConnectionObjects": [], "InputRefsToBeRemoved": [], "Setup": $$b2771f5c-0c18-4261-a415-7463e27eb614, "solutionList": {"SolutionPoints": {"93": {"FlowTime": 0, "TimeStep": -1, "CrankAngle": 0, "Unsteady": False, "CaseFile": $$cba6b5cf-f4b5-4f3e-be3d-07b3d40db5b9, "DataFile": $$20b0ffb3-7049-4e51-a3ec-246808bdcf6f, "PdfFile": None, "S2sFile": None, "FlameletFile": None, "WaveFile": None, "DtrmFile": None, "UdfFile": None, "UdfLib": None, "SurfaceMonitors": None, "VolumeMonitors": None, "ParticleInjections": None, "IsImportedFinalData": False}}, "CurrentPoint": 93, "OldSolutionPoints": []}, "SolutionInfo": {"Residuals": {"continuity": 76935842000000, "x-velocity": 1.1624692E+24, "y-velocity": 3.8591317E+23, "energy": 2.4679944E+33}, "CurrentIteration": 93, "CurrentFlowTime": 0, "CurrentTimeStep": 0, "UnsteadyFlow": False, "NewSetupInfo": {"MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 5, "NodeCount": 210, "FaceCount": 347, "CellCount": 138, "PartitionCount": 3, "CellZones": [], "FaceZones": [], "DomainMinX": 0, "DomainMinY": 0, "DomainMinZ": 0, "DomainMaxX": 2, "DomainMaxY": 0.0631, "DomainMaxZ": 0, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": False}, "ModelInfo": {"rp_seg_": False, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": True, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": False, "rp_dual_time_": False, "rp_amg_": True, "rf_energy_": True, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": False, "rp_kklw_": False, "rp_kw_": False, "rp_lam_": True, "rp_les_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": False, "rp_turb_": False, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": False, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": False, "rp_double_": True, "rp_graphics_": True, "rp_host_": True, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": False}, "ModelSummary": {"Space": "Axisymmetric", "Time": "Steady", "Viscous": "Laminar", "Heat_Transfer": "Enabled", "Solidification_and_Melting": "Disabled", "Radiation": "None", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled"}}, "MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 5, "NodeCount": 210, "FaceCount": 347, "CellCount": 138, "PartitionCount": 3, "CellZones": [], "FaceZones": [], "DomainMinX": 0, "DomainMinY": 0, "DomainMinZ": 0, "DomainMaxX": 2, "DomainMaxY": 0.0631, "DomainMaxZ": 0, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": False}, "ModelInfo": {"rp_seg_": False, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": True, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": False, "rp_dual_time_": False, "rp_amg_": True, "rf_energy_": True, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": False, "rp_kklw_": False, "rp_kw_": False, "rp_lam_": True, "rp_les_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": False, "rp_turb_": False, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": False, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": False, "rp_double_": True, "rp_graphics_": True, "rp_host_": True, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": False}, "ModelSummary": {"Space": "Axisymmetric", "Time": "Steady", "Viscous": "Laminar", "Heat_Transfer": "Enabled", "Solidification_and_Melting": "Disabled", "Radiation": "None", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled"}}, "InitialConditionFileReference": None, "StartFromExistingData": True, "RestartDataReference": None, "RestartInfoData": None, "SolutionTranscript": None, "EnableSolutionMonitoring": True, "EnableDataInterpolation": False, "UpstreamSourcesRemoved": False, "solutionStatus": "Interrupted", "DataConnections": {"FluentSolution": ["c27b6cac-0578-4ab5-806f-59b58498c1a4"]}, "InitialConditionConnectionKey": "00000000-0000-0000-0000-000000000000", "InitialConditionEntity": None, "RunNumber": 12, "ResidualsFileReference": None, "InterpolationDataFileReference": None}</member-data>
+        <properties-setByUserFlag-data valType="String">["RunNumber"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Solution/FluentLauncherSettings:RunSettings" Version="1.0">
+        <class-type valType="String">FluentLauncherSettings</class-type>
+        <object-name valType="String">RunSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Fluent Launcher Settings", "UseUpstreamLauncherSettings": True, "Dimension": "TwoD", "Precision": "Double", "Initialization": "ProgramControlled", "InitSolutionDataFile": "", "ShowLauncher": True, "DisplayMesh": True, "EmbedGraphicsWindows": True, "WorkbenchColorScheme": True, "UseJobScheduler": False, "FluentRootEnv": "$(FLUENT_ROOT)", "UseJournalFile": False, "JournalFile": "", "SetupCompilationEnvironment": True, "UDFPath": r"$(FLUENT_ROOT)\$(ARCH)\udf.bat", "EnvPath": {}, "PrePostOnly": False, "RunParallel": True, "NumberOfProcessorsMeshing": 1, "NumberOfProcessors": 3, "NumberOfGPGPUs": 0, "Interconnect": "default", "MpiType": "default", "UseSharedMemory": True, "MachineSpec": "MachineList", "MachineList": "", "MachineFileName": "", "CachePassword": False, "ConvertUNCPath": False, "ClusterHeadNode": "", "ClusterJobTemplate": "", "ClusterNodeGroup": "", "ClusterProcessorUnit": "Core", "StartWhenResourcesAvailable": False, "CreateJobSubmissionXML": False, "JobSubmissionXmlFile": "", "JobScheduler": "LSF", "UseLSFQueue": False, "LSFQueue": "", "UseLSFCheckpoint": False, "UseCheckpointDirectory": False, "LSFCheckpointDirectory": "", "LSFUseAutomaticCheckpointing": True, "LSFCheckpointPeriod": 60, "SGEQMaster": "localhost", "SGEQueue": "", "SGEPE": "", "SGEUseSettings": False, "SGESettings": "", "RemoteRunOnLinux": False, "RemoteFluentRootPath": "", "RemoteRshCommand": "SSH", "RemoteUseHost": False, "RemoteHostName": "", "RemoteUseWorkingDirectory": False, "RemoteWorkingDirectory": "", "RemoteRshOtherCommand": ""}</member-data>
+      </Object>
+      <Object Name="/Solution/FluentCase:FluentCase" Version="1.0">
+        <class-type valType="String">FluentCase</class-type>
+        <object-name valType="String">FluentCase</object-name>
+        <member-data valType="String">{"DisplayText": "FluentCase"}</member-data>
+      </Object>
+      <Object Name="/Solution/FluentSolution:SolutionDataProvider" Version="1.0">
+        <class-type valType="String">FluentSolution</class-type>
+        <object-name valType="String">SolutionDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataProvider", "DataSourceRef": None}</member-data>
+      </Object>
+      <Object Name="/Solution/SolutionSettings:SolutionSettings" Version="1.0">
+        <class-type valType="String">Ansys.JobManager.Data.SolutionSettingsEntity, Ans.JobManager</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.JobManager.Data.SolutionSettingsTypeSpec, Ans.JobManager", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "JournalVariableName": "solutionSettings", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": True, "Constraints": None}, "UpdateOption": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": "Foreground", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Update Option", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Run in Foreground, Run in Background, Submit to Remote Solve Manager", "Options": "Foreground, Background, RemoteSolveManager", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "SolveManager": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "localhost", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Solve Manager", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": True, "OptionIcons": None, "OptionLabels": "localhost", "Options": "localhost", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "Queue": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Local", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Queue", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "EnablePolling": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": True, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Download Progress Information", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "OptionLabels": None}, "PollingInterval": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "120 [s]", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Progress Download Interval", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": "1.79769313486231E+308 [s]", "Min": "0 [s]", "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Time"}, "ExecutionMode": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Serial", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Execution Mode", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Serial, Parallel", "Options": "Serial, Parallel", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "NumberOfProcesses": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager' and ExecutionMode == 'Parallel'", "Default": 2, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Number of Processes", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": None, "Min": 2, "UndefinedValue": 2147483647}, "RsmUserString": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": None, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "User String (Beta)", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None}}, "DataTypeHierarchy": "SolutionSettings,DataEntity"}</type-spec>
+        <object-name valType="String">SolutionSettings</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionSettings", "UpdateOption": "Foreground", "SolveManager": "localhost", "Queue": "Local", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Parallel", "NumberOfProcesses": 3, "RsmUserString": None}</member-data>
+      </Object>
+      <Object Name="/Solution/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": True, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">3610</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3586, "Input": 3609, "Output": 2791}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 2715, "Setup": 3454, "Solution": 3576, "Results": 3125, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">Post</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results/CFDResults:Results Source" Version="1.0">
+        <class-type valType="String">CFDResults</class-type>
+        <object-name valType="String">Results Source</object-name>
+        <member-data valType="String">{"DisplayText": "Results Source", "DataLinks": {"$$2da8c152-a1b1-4a1e-91f2-5ebf5629c557": $$a4ad14dc-9828-49cd-943c-cbbfba77b981}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": $$caa41c89-52bb-4827-a6a4-2f853af0f364, "_reportFiles": None, "_htmlReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 2}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Solution</DataSource1>
+          <EntityType1 valType="String">FluentSolution</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results/CFDAnalysis:Results Provider" Version="1.0">
+        <class-type valType="String">CFDAnalysis</class-type>
+        <object-name valType="String">Results Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Results Provider", "DataSourceRef": $$f90157bc-e183-46e2-b9cf-a88f02cd4903}</member-data>
+      </Object>
+      <Object Name="/Results/SolutionDataLink:SolutionDataProvider" Version="1.0">
+        <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">SolutionDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataProvider", "Entity": $$2da8c152-a1b1-4a1e-91f2-5ebf5629c557, "DataType": "FluentSolution", "ConnectionKey": "c27b6cac-0578-4ab5-806f-59b58498c1a4", "RefreshTimestamp": 3576, "ID": 1, "SecondID": 2, "DataEntityType": "FluentSolution", "SystemName": "FLU", "LastFilename": {"FluentSolution": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\FLU\Fluent\SYS-4-00130.dat.gz"}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Geometry 1" Version="1.0">
+      <container-type valType="String">Ansys.DesignModeler.Core.Addin:Geometry</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">4339</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7165, "Input": 4337, "Output": 4337}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{}</last-update-regen-times>
+      <unique-system-dir valType="String">Geom-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Geometry 1/Geometry:GeometryDataObject" Version="1.0">
+        <class-type valType="String">Geometry</class-type>
+        <object-name valType="String">GeometryDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "GeometryDataObject", "_geometryFileRelativePath": r"dp0\Geom-1\DM\Geom-1.agdb", "_geometryTeamcenterConnection": None, "_geometryPlugInName": "", "GeomFileReference": $$1b7ab1c9-9fa1-417d-8086-7a887edf100d, "GeomRepositoryFileReference": None, "GeometryImportSolidBodies": True, "GeometryImportSurfaceBodies": True, "GeometryImportLineBodies": False, "GeometryImportParameters": True, "GeometryImportParametersFilter": "DS", "GeometryImportCadAttributes": False, "GeometryImportCadAttributesFilter": "SDFEA;DDM", "GeometryImportNamedSelections": False, "GeometryImportNamedSelectionsFilter": "NS", "GeometryImportMaterialProperties": False, "GeometryImportAnalysisType": "AnalysisType_3D", "GeometryImportCadAssociativity": True, "GeometryImportCoordinateSystems": False, "GeometryImportWorkPoints": False, "GeometryImportSavePartFile": False, "GeometryImportImportUsingInstances": True, "GeometryImportSmartUpdate": False, "GeometryImportComparePartsOnUpdate": "ComparePartsMethod_None", "GeometryImportComparePartsTolerance": "ComparePartsTolerance_Tight", "GeometryImportProcessEnclosures": True, "GeometryImportDecomposeDisjointFaces": True, "GeometryImportMixedResolutionOption": "MixedImport_None", "GeometryImportWeightclass": "ImportWeightclass_Heavyweight", "GeometryImportFlattenAssembly": True, "GeometryImportSTLSDTAlgorithm": "STLSDTAlgorithm_Curvatures", "GeometryImportSTLCurvatureAlgorithmSharpEdgesAngle": 30, "GeometryImportSTLCurvatureAlgorithmPlanesToleranceAngle": 0.5, "GeometryImportSTLCurvatureAlgorithmIgnoreSecondaryNodes": True, "GeometryImportSTLAngleAlgorithmCutAngle": 15, "GeometryImportSTLAngleAlgorithmToleranceAngle": 15, "GeometryImportSpaceClaimExplodeUnsharedComponents": False, "Guid": "a983e2b0-2628-4ee0-af21-3d1de11f70d5", "ObjectState": 0, "UpstreamConnections": {}, "ImportedFeatures": {}, "IsSpaceClaimGeometry": False, "AreParametersOutOfDate": False, "RegisteredExternalFilesInfo": {"$$1b7ab1c9-9fa1-417d-8086-7a887edf100d": {"FilePathInDM": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\Geom-1\DM\Geom-1.agdb", "FilePathAfterRepair": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\Geom-1\DM\Geom-1.agdb", "IsFileRepaired": False, "CadSourceType": "DesignModeler"}}, "AreParametersMigratedFromLegacyDatabaseImport": False}</member-data>
+        <properties-setByUserFlag-data valType="String">["ObjectState"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Geometry 1/TransferData:Geometry" Version="1.0">
+        <class-type valType="String">TransferData</class-type>
+        <object-name valType="String">Geometry</object-name>
+        <member-data valType="String">{"DisplayText": "Geometry", "ConnectionKeys": ["a54a58b3-c418-41da-bdc9-3958c69f2bb6"], "Data": $$669d52ae-f4b6-49a7-8c8c-ae4d7c9272e8}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Mesh 1" Version="1.0">
+      <container-type valType="String">Ansys.Meshing.Core.Addin:SimulationModel</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">3469</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3468, "Input": 3464, "Output": 3464}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{"MechanicalModel": 3517, "MechanicalMesh": 3517}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 2715, "Setup": 3454, "Solution": 3053, "Results": 3125, "Mesh 1": 0, "Setup 1": 3432, "Solution 1": 3403, "Results 1": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SYS-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Mesh 1/SimulationConnection:SimulationConnection" Version="1.0">
+        <class-type valType="String">SimulationConnection</class-type>
+        <object-name valType="String">SimulationConnection</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationConnection", "_IsAssemblyMeshing": False, "_MeshingSolverSetting": 0, "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {}, "DSIdToDataReferenceMap": {"13": {"CellModel": $$7fbbde54-65b3-4ede-b373-e62aa1268e49}, "12": {"CellModel": $$7fbbde54-65b3-4ede-b373-e62aa1268e49}, "14": {"CellModel": $$7fbbde54-65b3-4ede-b373-e62aa1268e49}}, "Attributes": {}}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/MechanicalSystemType:SystemType for Any|Any|Any" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemType for Any|Any|Any</object-name>
+        <member-data valType="String">{"DisplayText": None, "PhysicsType": "Any", "AnalysisType": "Any", "SolverType": "Any", "PhysicsTypeDisplayString": "Any", "AnalysisTypeDisplayString": "Any", "SolverTypeDisplayString": "Any", "SystemTypeCombination": None, "DelimitedSystemTypeCominbation": None, "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": None, "SystemName": "SYS 1", "SystemID": "SYS-1", "ICEngineAutoSetup": False, "ICEngineMeshSettings": "Edit Mesh Settings", "ICEngineMeshPanelValues": None, "RefMeshSize": "0 [mm]"}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/MeshingMesh:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">MeshingMesh</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Caption": "Mesh", "MeshId": 14}</member-data>
+        <custom-data>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ImportedMeshFileType valType="String">0</ImportedMeshFileType>
+          <value-keys valType="String">{"AttentionRequired": System.Boolean, "ImportedMeshFileType": System.Int32}</value-keys>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap>
+            <dictionary-keys valType="String">[FluentMesh]</dictionary-keys>
+            <FluentMesh>
+              <Name valType="String">FluentMesh</Name>
+              <Guid0 valType="String">245d3f6f-cea3-4aab-80a7-9ff799560c78</Guid0>
+              <Data valType="String">bbfe46a0-247a-4cb6-86eb-b6caa45b82e2</Data>
+              <UpToDate valType="String">True</UpToDate>
+              <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "Data": System.String, "UpToDate": System.Boolean}</value-keys>
+            </FluentMesh>
+          </transferDataMap>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh 1/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider" Version="1.0">
+        <class-type valType="String">MeshingGeneratedMeshOutputProvider</class-type>
+        <object-name valType="String">MeshingGeneratedMeshOutputProvider</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingGeneratedMeshOutputProvider", "DataConnections": [], "TransferDataObject": $$b84e0004-44fe-4344-bbd1-7eddd465e5c2, "VersionNumber": 1, "PMDBFile": None, "ACMOFile": None, "Mechdb": None, "UnitSystem": None}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/OutputsGeneratedManagerDataEntityType:OutputsGeneratedManagerObject" Version="1.0">
+        <class-type valType="String">OutputsGeneratedManagerDataEntityType</class-type>
+        <object-name valType="String">OutputsGeneratedManagerObject</object-name>
+        <member-data valType="String">{"DisplayText": "OutputsGeneratedManagerObject", "outputGeneratedTimes": {"FluentMesh": 3464}}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry": {"$$2affcca6-c77d-4fb2-a67c-328293c4358a": {"Geometry": ["f2c2fb4f-ce96-4cf9-88a6-85e2d8594da0"]}}}}</member-data>
+      </Object>
+      <Object Name="/Mesh 1/MechanicalModel:MechanicalModel" Version="1.0">
+        <class-type valType="String">MechanicalModel</class-type>
+        <object-name valType="String">MechanicalModel</object-name>
+        <member-data valType="String">{"DisplayText": "MechanicalModel", "Caption": "Model", "File": $$70d2fc99-ab34-411c-b5b0-277ac1a6886a, "EdaFile": None, "ModelId": 12, "PrototypeId": 13, "ModelHash": "a8a2dc84-bf34-448d-900d-eafe0e8991aa", "GeometryHash": "59f0ddf4-de96-429c-bdd5-b70de9930a93", "IsResetNotRequired": False}</member-data>
+        <custom-data>
+          <File valType="String">70d2fc99-ab34-411c-b5b0-277ac1a6886a</File>
+          <FilePath valType="String"></FilePath>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <IsModifiedDueToModelAssemblyPropertyChange valType="String">False</IsModifiedDueToModelAssemblyPropertyChange>
+          <AttachType valType="String">2</AttachType>
+          <value-keys valType="String">{"File": System.String, "FilePath": System.String, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "IsModifiedDueToModelAssemblyPropertyChange": System.Boolean, "AttachType": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh 1/MechanicalMeshFile:FluentMesh" Version="1.0">
+        <class-type valType="String">MechanicalMeshFile</class-type>
+        <object-name valType="String">FluentMesh</object-name>
+        <member-data valType="String">{"DisplayText": "FluentMesh", "TransferFile": $$1d1d0020-d313-44ad-bef1-ce98904b7de9}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 1" Version="1.0">
+      <container-type valType="String">Ansys.Fluent.Addin:SetupContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">7151</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7152, "Input": 7150, "Output": 7150}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 2715, "Setup": 3454, "Solution": 3053, "Results": 3125, "Mesh 1": 3469, "Setup 1": 3432, "Solution 1": 3403, "Results 1": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">FLU-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 1/SetupData:SetupData" Version="1.0">
+        <class-type valType="String">SetupData</class-type>
+        <object-name valType="String">SetupData</object-name>
+        <member-data valType="String">{"DisplayText": "SetupData", "UpstreamConnectionObjects": [{"UpstreamObjectReference": $$3f85b057-0328-4138-8a37-3048ca56a385, "guid": "245d3f6f-cea3-4aab-80a7-9ff799560c78", "ConnectionType": "FluentMesh", "FileReference": $$1d1d0020-d313-44ad-bef1-ce98904b7de9}], "InputRefsToBeRemoved": [], "MeshReference": $$1d1d0020-d313-44ad-bef1-ce98904b7de9, "UpstreamMeshReferences": [], "FileType": "Mesh", "_fluentSolution": $$033a11c4-18c7-417c-80ab-f067797fc3b2, "SetupInfo": {"MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 5, "NodeCount": 2233, "FaceCount": 4252, "CellCount": 2020, "PartitionCount": 3, "CellZones": [], "FaceZones": [], "DomainMinX": 0, "DomainMinY": 0, "DomainMinZ": 0, "DomainMaxX": 2, "DomainMaxY": 0.0631, "DomainMaxZ": 0, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": False}, "ModelInfo": {"rp_seg_": False, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": True, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": False, "rp_dual_time_": False, "rp_amg_": True, "rf_energy_": True, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": False, "rp_kklw_": False, "rp_kw_": False, "rp_lam_": True, "rp_les_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": False, "rp_turb_": False, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": False, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": False, "rp_double_": True, "rp_graphics_": True, "rp_host_": False, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": False}, "ModelSummary": {"Space": "Axisymmetric", "Time": "Steady", "Viscous": "Laminar", "Heat_Transfer": "Enabled", "Solidification_and_Melting": "Disabled", "Radiation": "None", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled"}}, "GenerateSetupOutput": True, "InputFileName": "SYS-1", "SetupGeneratedCaseFile": $$94d1ddc3-b53e-4201-a761-1f4e9e3a862a, "UserData": {"ModelInfoFile": $$d08fa2d3-7f4d-4f03-98ef-57c14b879c78, "MeshOperations": '((expected-zone-names inlet axis outlet wall surface_body) (operations-list ((type . zone-type-change) (id . zone-type-change-1) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . pressure-outlet))) ((type . zone-type-change) (id . zone-type-change-2) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . pressure-inlet))) ((type . zone-type-change) (id . zone-type-change-3) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . velocity-inlet))) ((type . zone-type-change) (id . zone-type-change-4) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . pressure-inlet))) ((type . zone-type-change) (id . zone-type-change-5) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . velocity-inlet))) ((type . zone-type-change) (id . zone-type-change-6) (arg-pair ("Zone Name" . inlet) ("New Zone Type" . pressure-inlet)))))', "BoundaryProfileFile": None, "CaseFile": None, "DataFile": None, "OtherInputFiles": {}, "IterationsSpecified": True, "UsingSolutionStrategy": False, "InitializationValid": True, "ModelInfoCompatible": True}, "ConnectionKey": "245d3f6f-cea3-4aab-80a7-9ff799560c78", "InputEntities": {}, "AnsoftXmlString": "", "StartupSchemeFileRef": None, "AnsoftSelectedData": {}, "MeshEntity": $$3f85b057-0328-4138-8a37-3048ca56a385, "CortexVarState": '((((gui-processing? #t) (surfaces/groups ((inlet (2)) (axis (3)) (interior-surface_body (4)) (outlet (1)) (wall (0)))) (cx-virtual-id-list (4196 4197 4199 4200 4206)) (cx-surface-id-map ((2 4206) (4 4200) (3 4199) (1 4197) (0 4196))) (cx-surface-type ((2 0) (0 0) (1 0) (3 0) (4 0))) (cx-surface-def-list ((4206 () (zone-surface 4206 6) #f) (4200 () (zone-surface 4200 1) #f) (4199 () (zone-surface 4199 5) #f) (4197 () (zone-surface 4197 7) #f) (4196 () (zone-surface 4196 8) #f))) (cx-surface-list #((0 ((zid 8) (type zone-surf) (name wall) (status susp) (facet-info (0 0 0 0)))) (1 ((zid 7) (type zone-surf) (name outlet) (status susp) (facet-info (0 0 0 0)))) (2 ((zid 6) (type zone-surf) (name inlet) (status susp) (facet-info (0 0 0 0)))) (3 ((zid 5) (type zone-surf) (name axis) (status susp) (facet-info (0 0 0 0)))) (4 ((zid 1) (type zone-surf) (name interior-surface_body) (status susp) (facet-info (0 0 0 0)))) #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f #f)) (xy/yfunction "mach-number") (xy/surfaces (3)) (view-list ((front ((1. 0.03155 5.25) (1. 0.03155 0.) (0. 1. 0.) 2.1 2.1 "perspective") #(1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1)) (back ((1. 0.03155 -5.25) (1. 0.03155 0.) (0. 1. 0.) 2.1 2.1 "perspective") #(1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1)))) (left-button-function mouse-zoom) (lights/headlight/on? #f) (contour/filled? #t) (render/domain "mixture") (render/var-name "Static Pressure") (render/grid/surfaces (3 1 0)) (render/range? #f) (render/nc 50) (filled-grid? #f) (hidden-surfaces? #f) (axes/visible? #f) (cx-case-version (16 0 0)))) (2 surface_body) (6 inlet) (1 interior-surface_body) (5 axis) (7 outlet) (8 wall))'}</member-data>
+      </Object>
+      <Object Name="/Setup 1/FluentLauncherSettings:RunSettings" Version="1.0">
+        <class-type valType="String">FluentLauncherSettings</class-type>
+        <object-name valType="String">RunSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Fluent Launcher Settings", "UseUpstreamLauncherSettings": True, "Dimension": "TwoD", "Precision": "Double", "Initialization": "ProgramControlled", "InitSolutionDataFile": "", "ShowLauncher": True, "DisplayMesh": True, "EmbedGraphicsWindows": True, "WorkbenchColorScheme": True, "UseJobScheduler": False, "FluentRootEnv": "$(FLUENT_ROOT)", "UseJournalFile": False, "JournalFile": "", "SetupCompilationEnvironment": True, "UDFPath": r"$(FLUENT_ROOT)\$(ARCH)\udf.bat", "EnvPath": {}, "PrePostOnly": False, "RunParallel": False, "NumberOfProcessorsMeshing": 1, "NumberOfProcessors": 3, "NumberOfGPGPUs": 0, "Interconnect": "default", "MpiType": "default", "UseSharedMemory": True, "MachineSpec": "MachineList", "MachineList": "", "MachineFileName": "", "CachePassword": False, "ConvertUNCPath": False, "ClusterHeadNode": "", "ClusterJobTemplate": "", "ClusterNodeGroup": "", "ClusterProcessorUnit": "Core", "StartWhenResourcesAvailable": False, "CreateJobSubmissionXML": False, "JobSubmissionXmlFile": "", "JobScheduler": "LSF", "UseLSFQueue": False, "LSFQueue": "", "UseLSFCheckpoint": False, "UseCheckpointDirectory": False, "LSFCheckpointDirectory": "", "LSFUseAutomaticCheckpointing": True, "LSFCheckpointPeriod": 60, "SGEQMaster": "localhost", "SGEQueue": "", "SGEPE": "", "SGEUseSettings": False, "SGESettings": "", "RemoteRunOnLinux": False, "RemoteFluentRootPath": "", "RemoteRshCommand": "SSH", "RemoteUseHost": False, "RemoteHostName": "", "RemoteUseWorkingDirectory": False, "RemoteWorkingDirectory": "", "RemoteRshOtherCommand": ""}</member-data>
+        <properties-setByUserFlag-data valType="String">["ShowLauncher", "DisplayMesh", "EmbedGraphicsWindows", "WorkbenchColorScheme", "SetupCompilationEnvironment", "Precision", "RunParallel", "NumberOfProcessors"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Setup 1/FluentSetup:SetupDataProvider" Version="1.0">
+        <class-type valType="String">FluentSetup</class-type>
+        <object-name valType="String">SetupDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SetupDataProvider", "DataSourceRef": None}</member-data>
+      </Object>
+      <Object Name="/Setup 1/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 1" Version="1.0">
+      <container-type valType="String">Ansys.Fluent.Addin:SolutionContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">7156</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7161, "Input": 7143, "Output": 7153}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 7151, "Solution 1": 7139, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6621, "Solution 2": 6683, "Results 2": 6747, "Solution 3": 6544, "Results 3": 7082, "Setup 4": 6879, "Solution 4": 6937, "Results 4": 7064}</last-update-regen-times>
+      <unique-system-dir valType="String">FLU-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 1/FluentSolutionProperties:SolutionData" Version="1.0">
+        <class-type valType="String">FluentSolutionProperties</class-type>
+        <object-name valType="String">SolutionData</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionData", "UpstreamConnectionObjects": [], "InputRefsToBeRemoved": [], "Setup": $$48370c14-47e7-4ad4-a956-cb32efeb5691, "solutionList": {"SolutionPoints": {"2455": {"FlowTime": 0, "TimeStep": -1, "CrankAngle": 0, "Unsteady": False, "CaseFile": $$cb041e1c-d2f1-4794-a7b4-34cd7efe1047, "DataFile": $$17d6e6c5-3143-4f58-b11e-e6b805aa9577, "PdfFile": None, "S2sFile": None, "FlameletFile": None, "WaveFile": None, "DtrmFile": None, "UdfFile": None, "UdfLib": None, "SurfaceMonitors": None, "VolumeMonitors": None, "ParticleInjections": None, "IsImportedFinalData": False}}, "CurrentPoint": 2455, "OldSolutionPoints": []}, "SolutionInfo": {"Residuals": {"continuity": 0.00016178289, "x-velocity": 0.00030919411, "y-velocity": 0.00098791427, "energy": 0.00013230324, "k": 7.3569554E-05, "epsilon": 6.7984486E-05}, "CurrentIteration": 2455, "CurrentFlowTime": 0, "CurrentTimeStep": 0, "UnsteadyFlow": False, "NewSetupInfo": {"MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 5, "NodeCount": 2233, "FaceCount": 4252, "CellCount": 2020, "PartitionCount": 3, "CellZones": [], "FaceZones": [], "DomainMinX": 0, "DomainMinY": 0, "DomainMinZ": 0, "DomainMaxX": 2, "DomainMaxY": 0.0631, "DomainMaxZ": 0, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": False}, "ModelInfo": {"rp_seg_": False, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": True, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": False, "rp_dual_time_": False, "rp_amg_": True, "rf_energy_": True, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": True, "rp_kklw_": False, "rp_kw_": False, "rp_lam_": False, "rp_les_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": True, "rp_turb_": True, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": False, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": False, "rp_double_": True, "rp_graphics_": True, "rp_host_": False, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": False}, "ModelSummary": {"Space": "Axisymmetric", "Time": "Steady", "Viscous": "Standard_k_epsilon_turbulence_model", "Wall_Treatment": "Standard_Wall_Functions", "Heat_Transfer": "Enabled", "Solidification_and_Melting": "Disabled", "Radiation": "None", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled"}}, "MeshInfo": {"CellZoneCount": 1, "FaceZoneCount": 5, "NodeCount": 2233, "FaceCount": 4252, "CellCount": 2020, "PartitionCount": 3, "CellZones": [], "FaceZones": [], "DomainMinX": 0, "DomainMinY": 0, "DomainMinZ": 0, "DomainMaxX": 2, "DomainMaxY": 0.0631, "DomainMaxZ": 0, "MaxCellSquish": 0, "MaxAspectRatio": 0, "GridValid": True, "Unsteady": False}, "ModelInfo": {"rp_seg_": False, "rp_acoustics_": False, "rp_atm_": False, "rp_axi_": True, "rp_des_": False, "rp_dpm_cache_": False, "rp_dpm_cache_serial_": False, "rp_unsteady_": False, "rp_dual_time_": False, "rp_amg_": True, "rf_energy_": True, "rp_hvac_": False, "rp_inviscid_": False, "rp_ke_": True, "rp_kklw_": False, "rp_kw_": False, "rp_lam_": False, "rp_les_": False, "rp_lsf_": False, "rp_net_": False, "rp_react_": False, "rp_sa_": False, "rp_sas_": False, "rp_sge_": False, "rp_spe_": False, "rp_spe_part_": False, "rp_electro_chem_": False, "rp_spe_site_": False, "rp_spe_surf_": False, "rp_trans_one_eqn_": False, "rp_trans_sst_": False, "rp_trb_scl_": True, "rp_turb_": True, "rp_absorbing_media_": False, "rp_visc_": True, "rp_v2f_": False, "sg_cylindrical_": False, "sg_disco_": False, "sg_bee_gees_": False, "sg_crev_": False, "sg_dpm_": False, "sg_dqmom_iem_": False, "sg_dtrm_": False, "sg_dynmesh_": False, "sg_overset_": False, "sg_ecfm_": False, "sg_geqn_": False, "sg_hg_": False, "sg_inert_": False, "sg_ignite_": False, "sg_network_": False, "sg_node_udm_": False, "sg_noniterative_": False, "sg_nox_": False, "sg_melt_": False, "sg_micro_mix_": False, "sg_mphase_": False, "sg_p1_": False, "sg_par_premix_": False, "sg_pb_": False, "sg_pdf_": False, "sg_pdf_transport_": False, "sg_premixed_": False, "sg_pull_": False, "sg_rosseland_": False, "sg_rsm_": False, "sg_s2s_": False, "sg_soot_": False, "sg_sox_": False, "sg_spark_": False, "sg_swirl_": False, "sg_udm_": False, "sg_uds_": False, "sg_vfr_": False, "sg_solar_": False, "sg_wetsteam_": False, "sg_moistair_": False, "sg_wallfilm_": False, "hyb_init_": False, "rp_spe_surf_rc_": False, "rp_3d_": False, "rp_double_": True, "rp_graphics_": True, "rp_host_": False, "rp_thread_": False, "dpm_cache_": True, "rp_wallfilm_": False}, "ModelSummary": {"Space": "Axisymmetric", "Time": "Steady", "Viscous": "Standard_k_epsilon_turbulence_model", "Wall_Treatment": "Standard_Wall_Functions", "Heat_Transfer": "Enabled", "Solidification_and_Melting": "Disabled", "Radiation": "None", "Species": "Disabled", "Coupled_Dispersed_Phase": "Disabled", "NOx_Pollutants": "Disabled", "SOx_Pollutants": "Disabled", "Soot": "Disabled", "Mercury_Pollutants": "Disabled"}}, "InitialConditionFileReference": None, "StartFromExistingData": True, "RestartDataReference": None, "RestartInfoData": None, "SolutionTranscript": None, "EnableSolutionMonitoring": True, "EnableDataInterpolation": False, "UpstreamSourcesRemoved": False, "solutionStatus": "Finished", "DataConnections": {"FluentSolution": ["f3a7dff9-6936-4d87-ad24-9de3e3a79516"]}, "InitialConditionConnectionKey": "00000000-0000-0000-0000-000000000000", "InitialConditionEntity": None, "RunNumber": 4, "ResidualsFileReference": None, "InterpolationDataFileReference": None}</member-data>
+        <properties-setByUserFlag-data valType="String">["RunNumber"]</properties-setByUserFlag-data>
+      </Object>
+      <Object Name="/Solution 1/FluentLauncherSettings:RunSettings" Version="1.0">
+        <class-type valType="String">FluentLauncherSettings</class-type>
+        <object-name valType="String">RunSettings</object-name>
+        <member-data valType="String">{"DisplayText": "Fluent Launcher Settings", "UseUpstreamLauncherSettings": True, "Dimension": "TwoD", "Precision": "Double", "Initialization": "ProgramControlled", "InitSolutionDataFile": "", "ShowLauncher": True, "DisplayMesh": True, "EmbedGraphicsWindows": True, "WorkbenchColorScheme": True, "UseJobScheduler": False, "FluentRootEnv": "$(FLUENT_ROOT)", "UseJournalFile": False, "JournalFile": "", "SetupCompilationEnvironment": True, "UDFPath": r"$(FLUENT_ROOT)\$(ARCH)\udf.bat", "EnvPath": {}, "PrePostOnly": False, "RunParallel": False, "NumberOfProcessorsMeshing": 1, "NumberOfProcessors": 3, "NumberOfGPGPUs": 0, "Interconnect": "default", "MpiType": "default", "UseSharedMemory": True, "MachineSpec": "MachineList", "MachineList": "", "MachineFileName": "", "CachePassword": False, "ConvertUNCPath": False, "ClusterHeadNode": "", "ClusterJobTemplate": "", "ClusterNodeGroup": "", "ClusterProcessorUnit": "Core", "StartWhenResourcesAvailable": False, "CreateJobSubmissionXML": False, "JobSubmissionXmlFile": "", "JobScheduler": "LSF", "UseLSFQueue": False, "LSFQueue": "", "UseLSFCheckpoint": False, "UseCheckpointDirectory": False, "LSFCheckpointDirectory": "", "LSFUseAutomaticCheckpointing": True, "LSFCheckpointPeriod": 60, "SGEQMaster": "localhost", "SGEQueue": "", "SGEPE": "", "SGEUseSettings": False, "SGESettings": "", "RemoteRunOnLinux": False, "RemoteFluentRootPath": "", "RemoteRshCommand": "SSH", "RemoteUseHost": False, "RemoteHostName": "", "RemoteUseWorkingDirectory": False, "RemoteWorkingDirectory": "", "RemoteRshOtherCommand": ""}</member-data>
+      </Object>
+      <Object Name="/Solution 1/FluentCase:FluentCase" Version="1.0">
+        <class-type valType="String">FluentCase</class-type>
+        <object-name valType="String">FluentCase</object-name>
+        <member-data valType="String">{"DisplayText": "FluentCase"}</member-data>
+      </Object>
+      <Object Name="/Solution 1/FluentSolution:SolutionDataProvider" Version="1.0">
+        <class-type valType="String">FluentSolution</class-type>
+        <object-name valType="String">SolutionDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataProvider", "DataSourceRef": None}</member-data>
+      </Object>
+      <Object Name="/Solution 1/SolutionSettings:SolutionSettings" Version="1.0">
+        <class-type valType="String">Ansys.JobManager.Data.SolutionSettingsEntity, Ans.JobManager</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.JobManager.Data.SolutionSettingsTypeSpec, Ans.JobManager", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "JournalVariableName": "solutionSettings", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": True, "Constraints": None}, "UpdateOption": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": "Foreground", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Update Option", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Run in Foreground, Run in Background, Submit to Remote Solve Manager", "Options": "Foreground, Background, RemoteSolveManager", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "SolveManager": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "localhost", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Solve Manager", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": True, "OptionIcons": None, "OptionLabels": "localhost", "Options": "localhost", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "Queue": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Local", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Queue", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "EnablePolling": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": True, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Download Progress Information", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "OptionLabels": None}, "PollingInterval": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "120 [s]", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Progress Download Interval", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": "1.79769313486231E+308 [s]", "Min": "0 [s]", "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Time"}, "ExecutionMode": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Serial", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Execution Mode", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Serial, Parallel", "Options": "Serial, Parallel", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "NumberOfProcesses": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager' and ExecutionMode == 'Parallel'", "Default": 2, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Number of Processes", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": None, "Min": 2, "UndefinedValue": 2147483647}, "RsmUserString": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": None, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "User String (Beta)", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None}}, "DataTypeHierarchy": "SolutionSettings,DataEntity"}</type-spec>
+        <object-name valType="String">SolutionSettings</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionSettings", "UpdateOption": "Foreground", "SolveManager": "localhost", "Queue": "Local", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Parallel", "NumberOfProcesses": 3, "RsmUserString": None}</member-data>
+      </Object>
+      <Object Name="/Solution 1/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": True, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 1/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 1" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">0</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 3315, "Input": 3291, "Output": 3290}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{}</last-update-regen-times>
+      <unique-system-dir valType="String">Post-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">false</contains-significant-data>
+      <Object Name="/Results 1/CFDResults:Results 1 Source" Version="1.0">
+        <class-type valType="String">CFDResults</class-type>
+        <object-name valType="String">Results 1 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Results 1 Source", "DataLinks": {"$$9562d19a-63c4-4369-b6fc-597fe78931b2": $$eb55d029-e8cc-4e88-a27b-164201dd3512}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": None, "_reportFiles": None, "_htmlReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 2}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Solution 1</DataSource1>
+          <EntityType1 valType="String">FluentSolution</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results 1/CFDAnalysis:Results 1 Provider" Version="1.0">
+        <class-type valType="String">CFDAnalysis</class-type>
+        <object-name valType="String">Results 1 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Results 1 Provider", "DataSourceRef": $$e0bbe575-6a0f-497e-bbe0-5ad47b499097}</member-data>
+      </Object>
+      <Object Name="/Results 1/SolutionDataLink:SolutionDataProvider" Version="1.0">
+        <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">SolutionDataProvider</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionDataProvider", "Entity": $$9562d19a-63c4-4369-b6fc-597fe78931b2, "DataType": "FluentSolution", "ConnectionKey": "f3a7dff9-6936-4d87-ad24-9de3e3a79516", "RefreshTimestamp": 0, "ID": 1, "SecondID": 2, "DataEntityType": "FluentSolution", "SystemName": "", "LastFilename": {}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 3" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6473</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6495, "Input": 6472, "Output": 4818}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 4910, "Mesh 2": 5288, "Setup 2": 6111, "Solution 2": 0, "Results 2": 5850, "Solution 3": 0, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 3/CFXSetupProperties:Setup 2 Source" Version="1.0">
+        <class-type valType="String">CFXSetupProperties</class-type>
+        <object-name valType="String">Setup 2 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 2 Source", "DataLinks": {"$$6772c55c-c56d-420b-a1ae-39ac50b6db7c": $$55b30935-fb7e-48a1-b1b5-efae463dda88}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "DEFFileTimeStamp": 6473, "SolverInputExtendedFiles": [], "CachedANSYSInputFile": None, "PhysicsStatus": "", "AllowAssemblyMeshImport": False, "PhysicsErrSuppressEnabled": False, "PhysicsStatusSummary": "", "ANSYSInputPendingDelete": False, "DeletedMeshIDs": [], "NextMeshID": 1, "SolverInputFile": $$0e6f5f5d-5253-40d6-8126-40c06bd1c175, "CaseFile": $$31c6574b-def1-496f-b3fd-f6aa1dce545e}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Mesh 2</DataSource1>
+          <EntityType1 valType="String">SimulationGeneratedMesh</EntityType1>
+          <DataSource2 valType="String">Setup 3</DataSource2>
+          <EntityType2 valType="String">SimulationGeneratedMesh</EntityType2>
+          <DataSource3 valType="String">Setup 3</DataSource3>
+          <EntityType3 valType="String">CFXMesh</EntityType3>
+          <DataSource4 valType="String">Setup 3</DataSource4>
+          <EntityType4 valType="String">MechanicalSetup</EntityType4>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String, "DataSource2": System.String, "EntityType2": System.String, "DataSource3": System.String, "EntityType3": System.String, "DataSource4": System.String, "EntityType4": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Setup 3/CFXSetup:Setup 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSetup</class-type>
+        <object-name valType="String">Setup 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 2 Provider", "DataSourceRef": $$ee35c477-cf5c-41e8-9157-83fce6732975, "DataConnections": {"e9bdb1f2-a993-4de5-bb3c-48a67b9a2c7d": None}, "CFXSolverInputFile": $$0e6f5f5d-5253-40d6-8126-40c06bd1c175, "MAPDLSolverInputFile": None}</member-data>
+      </Object>
+      <Object Name="/Setup 3/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+      <Object Name="/Setup 3/PersistedSystemCouplingData:PersistedSystemCouplingData" Version="1.0">
+        <class-type valType="String">PersistedSystemCouplingData</class-type>
+        <object-name valType="String">PersistedSystemCouplingData</object-name>
+        <member-data valType="String">{"DisplayText": "PersistedSystemCouplingData", "Xml": ""}</member-data>
+      </Object>
+      <Object Name="/Setup 3/CFXMeshDataLink:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">CFXMeshDataLink</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Entity": $$6772c55c-c56d-420b-a1ae-39ac50b6db7c, "DataType": "CMDBMesh", "ConnectionKey": "f8c83fed-5220-4cec-9b62-0e98dfd3da64", "RefreshTimestamp": 5288, "ID": 1}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Mesh 2" Version="1.0">
+      <container-type valType="String">Ansys.Meshing.Core.Addin:SimulationModel</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">5288</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 5287, "Input": 5278, "Output": 5278}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 3878, "Setup": 3919, "Solution": 3926, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 4910, "Mesh 2": 4390, "Setup 2": 4488, "Solution 2": 4749, "Results 2": 5269, "Solution 3": 0, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">SYS-2</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Mesh 2/SimulationConnection:SimulationConnection" Version="1.0">
+        <class-type valType="String">SimulationConnection</class-type>
+        <object-name valType="String">SimulationConnection</object-name>
+        <member-data valType="String">{"DisplayText": "SimulationConnection", "_IsAssemblyMeshing": False, "_MeshingSolverSetting": 1, "Caption": "SimulationConnection", "EventIdToDataReferenceMap": {}, "DSIdToDataReferenceMap": {"13": {"CellModel": $$a66139c1-c61a-4464-bcad-3bcba5b8ac53}, "12": {"CellModel": $$a66139c1-c61a-4464-bcad-3bcba5b8ac53}, "14": {"CellModel": $$a66139c1-c61a-4464-bcad-3bcba5b8ac53}}, "Attributes": {}}</member-data>
+      </Object>
+      <Object Name="/Mesh 2/MechanicalSystemType:SystemType for Any|Any|Any" Version="1.0">
+        <class-type valType="String">MechanicalSystemType</class-type>
+        <object-name valType="String">SystemType for Any|Any|Any</object-name>
+        <member-data valType="String">{"DisplayText": None, "PhysicsType": "Any", "AnalysisType": "Any", "SolverType": "Any", "PhysicsTypeDisplayString": "Any", "AnalysisTypeDisplayString": "Any", "SolverTypeDisplayString": "Any", "SystemTypeCombination": None, "DelimitedSystemTypeCominbation": None, "SetupEntityType": "SimulationSetup", "SolutionEntityType": "SimulationSolution", "ResultsEntityType": "SimulationResults", "SetupDataEntityType": "MechanicalSetup", "SolutionDataEntityType": "MechanicalSolution", "ResultsDataEntityType": "MechanicalResults", "Id": None, "SystemName": "SYS 2", "SystemID": "SYS-2", "ICEngineAutoSetup": False, "ICEngineMeshSettings": "Edit Mesh Settings", "ICEngineMeshPanelValues": None, "RefMeshSize": "0 [mm]"}</member-data>
+      </Object>
+      <Object Name="/Mesh 2/MeshingMesh:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">MeshingMesh</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Caption": "Mesh", "MeshId": 14}</member-data>
+        <custom-data>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ImportedMeshFileType valType="String">0</ImportedMeshFileType>
+          <value-keys valType="String">{"AttentionRequired": System.Boolean, "ImportedMeshFileType": System.Int32}</value-keys>
+          <dictionary-keys valType="String">[transferDataMap]</dictionary-keys>
+          <transferDataMap>
+            <dictionary-keys valType="String">[CMDBMesh]</dictionary-keys>
+            <CMDBMesh>
+              <Name valType="String">CMDBMesh</Name>
+              <Guid0 valType="String">2aa01358-ade6-49f6-bf7f-c2af1dc6a29b</Guid0>
+              <Guid1 valType="String">f8c83fed-5220-4cec-9b62-0e98dfd3da64</Guid1>
+              <Guid2 valType="String">2a9629a0-fe76-464a-ab1a-5b84e855ada8</Guid2>
+              <Data valType="String">12b13142-0ae2-4ddf-b632-3dfeae1e5807</Data>
+              <UpToDate valType="String">True</UpToDate>
+              <value-keys valType="String">{"Name": System.String, "Guid0": System.String, "Guid1": System.String, "Guid2": System.String, "Data": System.String, "UpToDate": System.Boolean}</value-keys>
+            </CMDBMesh>
+          </transferDataMap>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh 2/MeshingGeneratedMeshOutputProvider:MeshingGeneratedMeshOutputProvider" Version="1.0">
+        <class-type valType="String">MeshingGeneratedMeshOutputProvider</class-type>
+        <object-name valType="String">MeshingGeneratedMeshOutputProvider</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingGeneratedMeshOutputProvider", "DataConnections": [], "TransferDataObject": $$67abe57a-fc22-4570-bc8c-f1b8f3992c16, "VersionNumber": 1, "PMDBFile": None, "ACMOFile": None, "Mechdb": None, "UnitSystem": None}</member-data>
+      </Object>
+      <Object Name="/Mesh 2/OutputsGeneratedManagerDataEntityType:OutputsGeneratedManagerObject" Version="1.0">
+        <class-type valType="String">OutputsGeneratedManagerDataEntityType</class-type>
+        <object-name valType="String">OutputsGeneratedManagerObject</object-name>
+        <member-data valType="String">{"DisplayText": "OutputsGeneratedManagerObject", "outputGeneratedTimes": {"CMDBMesh": 5278}}</member-data>
+      </Object>
+      <Object Name="/Mesh 2/ContainerConnections:ModelContainerConnections" Version="1.0">
+        <class-type valType="String">ContainerConnections</class-type>
+        <object-name valType="String">ModelContainerConnections</object-name>
+        <member-data valType="String">{"DisplayText": "ModelContainerConnections", "Connections": {"Geometry 1": {"$$669d52ae-f4b6-49a7-8c8c-ae4d7c9272e8": {"Geometry": ["a54a58b3-c418-41da-bdc9-3958c69f2bb6"]}}}}</member-data>
+      </Object>
+      <Object Name="/Mesh 2/MechanicalModel:MechanicalModel" Version="1.0">
+        <class-type valType="String">MechanicalModel</class-type>
+        <object-name valType="String">MechanicalModel</object-name>
+        <member-data valType="String">{"DisplayText": "MechanicalModel", "Caption": "Model", "File": $$6aeaa57a-eca3-47f4-8418-25dd5583736c, "EdaFile": None, "ModelId": 12, "PrototypeId": 13, "ModelHash": "aed86bcb-d3da-46fd-a8a9-b31fb96cc8e4", "GeometryHash": "9cda2805-4f42-4766-9aef-88c34394058c", "IsResetNotRequired": False}</member-data>
+        <custom-data>
+          <File valType="String">6aeaa57a-eca3-47f4-8418-25dd5583736c</File>
+          <FilePath valType="String"></FilePath>
+          <AttentionRequired valType="String">False</AttentionRequired>
+          <ParameterValueModified valType="String">False</ParameterValueModified>
+          <IsModifiedDueToModelAssemblyPropertyChange valType="String">False</IsModifiedDueToModelAssemblyPropertyChange>
+          <AttachType valType="String">2</AttachType>
+          <value-keys valType="String">{"File": System.String, "FilePath": System.String, "AttentionRequired": System.Boolean, "ParameterValueModified": System.Boolean, "IsModifiedDueToModelAssemblyPropertyChange": System.Boolean, "AttachType": System.Int32}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Mesh 2/MechanicalMeshFile:CMDBMesh" Version="1.0">
+        <class-type valType="String">MechanicalMeshFile</class-type>
+        <object-name valType="String">CMDBMesh</object-name>
+        <member-data valType="String">{"DisplayText": "CMDBMesh", "TransferFile": $$600f3b0a-4d2b-4247-a356-4f724df24ed2}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 2" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6621</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6751, "Input": 6620, "Output": 4447}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 3878, "Setup": 3919, "Solution": 3926, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 4910, "Mesh 2": 5288, "Setup 2": 4488, "Solution 2": 4749, "Results 2": 5269, "Solution 3": 0, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 2/CFXSetupProperties:Setup 2 Source" Version="1.0">
+        <class-type valType="String">CFXSetupProperties</class-type>
+        <object-name valType="String">Setup 2 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 2 Source", "DataLinks": {"$$6772c55c-c56d-420b-a1ae-39ac50b6db7c": $$c9d74566-baa6-4150-a9a5-4f0dbe3497f5}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "DEFFileTimeStamp": 6621, "SolverInputExtendedFiles": [], "CachedANSYSInputFile": None, "PhysicsStatus": "", "AllowAssemblyMeshImport": False, "PhysicsErrSuppressEnabled": False, "PhysicsStatusSummary": "", "ANSYSInputPendingDelete": False, "DeletedMeshIDs": [], "NextMeshID": 1, "SolverInputFile": $$2037b0a4-9a80-460f-b203-9909b0897015, "CaseFile": $$fa10379e-3e72-45d8-916e-44a24f162824}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Mesh 2</DataSource1>
+          <EntityType1 valType="String">SimulationGeneratedMesh</EntityType1>
+          <DataSource2 valType="String">Setup 2</DataSource2>
+          <EntityType2 valType="String">SimulationGeneratedMesh</EntityType2>
+          <DataSource3 valType="String">Setup 2</DataSource3>
+          <EntityType3 valType="String">CFXMesh</EntityType3>
+          <DataSource4 valType="String">Setup 2</DataSource4>
+          <EntityType4 valType="String">MechanicalSetup</EntityType4>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String, "DataSource2": System.String, "EntityType2": System.String, "DataSource3": System.String, "EntityType3": System.String, "DataSource4": System.String, "EntityType4": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Setup 2/CFXSetup:Setup 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSetup</class-type>
+        <object-name valType="String">Setup 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 2 Provider", "DataSourceRef": $$77b1ed34-df60-4dbb-81fd-e5ca807fa66b, "DataConnections": {"574cdb68-5f27-4f35-952d-8d2e96719c93": None}, "CFXSolverInputFile": $$2037b0a4-9a80-460f-b203-9909b0897015, "MAPDLSolverInputFile": None}</member-data>
+      </Object>
+      <Object Name="/Setup 2/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+      <Object Name="/Setup 2/PersistedSystemCouplingData:PersistedSystemCouplingData" Version="1.0">
+        <class-type valType="String">PersistedSystemCouplingData</class-type>
+        <object-name valType="String">PersistedSystemCouplingData</object-name>
+        <member-data valType="String">{"DisplayText": "PersistedSystemCouplingData", "Xml": ""}</member-data>
+      </Object>
+      <Object Name="/Setup 2/CFXMeshDataLink:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">CFXMeshDataLink</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Entity": $$6772c55c-c56d-420b-a1ae-39ac50b6db7c, "DataType": "CMDBMesh", "ConnectionKey": "2aa01358-ade6-49f6-bf7f-c2af1dc6a29b", "RefreshTimestamp": 5288, "ID": 1}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 2" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6683</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6723, "Input": 6417, "Output": 6417}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6621, "Solution 2": 0, "Results 2": 5850, "Solution 3": 6544, "Results 3": 6608}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 2/CFXSolutionProperties:Solution 2 Source" Version="1.0">
+        <class-type valType="String">CFXSolutionProperties</class-type>
+        <object-name valType="String">Solution 2 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Source", "DataLinks": {"$$d4a8d2d9-8f23-4be2-96a9-ca2a9863168f": $$68465726-d462-48ce-8714-77dc6b120d7d}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "CurrentResultsRef": $$7daf26c7-efcd-4654-9aed-37d43522f5f3, "RunDirectory": "", "UpstreamExecutionControlCCL": "", "InitializationOption": "InitialConditions", "ExecutionControlOption": "IssueWarning", "HaveExecutionControlConflict": False, "LoadMResOptions": "LastConfigOnly", "FailedRun": None, "SolverPath": "", "SolverArguments": "", "ExecutionControlCCL": r"""&amp;replace SIMULATION CONTROL:
+  EXECUTION CONTROL:
+    EXECUTABLE SELECTION:
+      Double Precision = On
+    END
+    INTERPOLATOR STEP CONTROL:
+      Runtime Priority = Standard
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+    END
+    PARTITIONER STEP CONTROL:
+      Multidomain Option = Automatic
+      Runtime Priority = Standard
+      EXECUTABLE SELECTION:
+        Use Large Problem Partitioner = Off
+      END
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+      PARTITION SMOOTHING:
+        Maximum Partition Smoothing Sweeps = 100
+        Option = Smooth
+      END
+      PARTITIONING TYPE:
+        MeTiS Type = k-way
+        Option = MeTiS
+        Partition Size Rule = Automatic
+      END
+    END
+    RUN DEFINITION:
+      Run Mode = Full
+      Solver Input File = G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\CFX\CFX\CFX.def
+    END
+    SOLVER STEP CONTROL:
+      Runtime Priority = Standard
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+      PARALLEL ENVIRONMENT:
+        Number of Processes = 1
+        Start Method = Serial
+      END
+    END
+  END
+END
+""", "SolverCommandMode": "Foreground"}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Setup 2</DataSource1>
+          <EntityType1 valType="String">CFXSetup</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Solution 2/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": True, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 2/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 2/CFXSolution:Solution 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSolution</class-type>
+        <object-name valType="String">Solution 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Provider", "DataSourceRef": $$76e7be3f-31e7-487f-ab57-38d888b65ad1, "DataConnections": {"1d47964d-8a01-492b-a561-81e8a4b77cc5": None}}</member-data>
+      </Object>
+      <Object Name="/Solution 2/CFXSolutionData:Solution 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSolutionData</class-type>
+        <object-name valType="String">Solution 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Provider", "DataSourceRef": $$76e7be3f-31e7-487f-ab57-38d888b65ad1, "DataConnections": {}}</member-data>
+      </Object>
+      <Object Name="/Solution 2/CFXSetupDataLink:Setup 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSetupDataLink</class-type>
+        <object-name valType="String">Setup 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 2 Provider", "Entity": $$d4a8d2d9-8f23-4be2-96a9-ca2a9863168f, "DataType": None, "ConnectionKey": "574cdb68-5f27-4f35-952d-8d2e96719c93", "RefreshTimestamp": 6621}</member-data>
+      </Object>
+      <Object Name="/Solution 2/CFXSolverRun:CFX_002" Version="1.0">
+        <class-type valType="String">CFXSolverRun</class-type>
+        <object-name valType="String">CFX_002</object-name>
+        <member-data valType="String">{"DisplayText": "CFX_002", "ResultsFile": $$11dc3608-3d4c-482b-a2ac-0b4913afb203, "OutFile": $$c839055c-9bf3-43b9-9724-c9f3fbe08ee7, "ExtendedFiles": [], "ANSYSFile": None, "ANSYSRestartDB": None, "RunStatus": "Normal", "Imported": False}</member-data>
+      </Object>
+      <Object Name="/Solution 2/CFXSolverRun:CFX_001.res" Version="1.0">
+        <class-type valType="String">CFXSolverRun</class-type>
+        <object-name valType="String">CFX_001.res</object-name>
+        <member-data valType="String">{"DisplayText": "CFX_001.res", "ResultsFile": $$add35093-6b3a-4359-9b37-4f8506e3f234, "OutFile": $$06acb873-4426-4abb-9d58-4882fc3147b1, "ExtendedFiles": [$$882d8562-4ec3-47d9-8563-86dc5f9728b3], "ANSYSFile": None, "ANSYSRestartDB": None, "RunStatus": "Error", "Imported": False}</member-data>
+      </Object>
+      <Object Name="/Solution 2/SolutionSettings7:SolutionSettings" Version="1.0">
+        <class-type valType="String">Ansys.JobManager.Data.SolutionSettingsEntity, Ans.JobManager</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.JobManager.Data.SolutionSettingsTypeSpec, Ans.JobManager", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "JournalVariableName": "solutionSettings7", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": True, "Constraints": None}, "UpdateOption": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": "Foreground", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Update Option", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Run in Foreground, Run in Background, Submit to Remote Solve Manager", "Options": "Foreground, Background, RemoteSolveManager", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "SolveManager": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "localhost", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Solve Manager", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": True, "OptionIcons": None, "OptionLabels": "localhost", "Options": "localhost", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "Queue": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Local", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Queue", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "EnablePolling": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": True, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Download Progress Information", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "OptionLabels": None}, "PollingInterval": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "120 [s]", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Progress Download Interval", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": "1.79769313486231E+308 [s]", "Min": "0 [s]", "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Time"}, "ExecutionMode": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Serial", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Execution Mode", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Serial, Parallel", "Options": "Serial, Parallel", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "NumberOfProcesses": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager' and ExecutionMode == 'Parallel'", "Default": 2, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Number of Processes", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": None, "Min": 2, "UndefinedValue": 2147483647}, "RsmUserString": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": None, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "User String (Beta)", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None}}, "DataTypeHierarchy": "SolutionSettings7,SolutionSettings,DataEntity"}</type-spec>
+        <object-name valType="String">SolutionSettings</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionSettings", "UpdateOption": "Foreground", "SolveManager": "localhost", "Queue": "Local", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Serial", "NumberOfProcesses": 2, "RsmUserString": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 2" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6747</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6733, "Input": 6746, "Output": 4141}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6621, "Solution 2": 6683, "Results 2": 5850, "Solution 3": 6544, "Results 3": 6608}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results 2/CFDResults:Results 2 Source" Version="1.0">
+        <class-type valType="String">CFDResults</class-type>
+        <object-name valType="String">Results 2 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Results 2 Source", "DataLinks": {"$$5c422c3a-7ec9-4453-ad21-eda355405c2b": $$c898a966-6361-4948-b12c-f790926c0fc8}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": $$375adde3-31a7-4e5e-b4db-a1553bac7ba2, "_reportFiles": None, "_htmlReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 2}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Solution 2</DataSource1>
+          <EntityType1 valType="String">CFXSolution</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results 2/CFDAnalysis:Results 2 Provider" Version="1.0">
+        <class-type valType="String">CFDAnalysis</class-type>
+        <object-name valType="String">Results 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Results 2 Provider", "DataSourceRef": $$ca8d8a21-7a23-479c-8f23-b440b0a7df91}</member-data>
+      </Object>
+      <Object Name="/Results 2/SolutionDataLink:Solution 2 Provider" Version="1.0">
+        <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">Solution 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Provider", "Entity": $$5c422c3a-7ec9-4453-ad21-eda355405c2b, "DataType": "CFXSolution", "ConnectionKey": "1d47964d-8a01-492b-a561-81e8a4b77cc5", "RefreshTimestamp": 6683, "ID": 1, "SecondID": 2, "DataEntityType": "CFXSolution", "SystemName": "CFX", "LastFilename": {"CFXSolution": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\CFX\CFX\CFX_002.res"}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 3" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6544</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6584, "Input": 5187, "Output": 5187}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6111, "Solution 2": 0, "Results 2": 5850, "Solution 3": 0, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 3/CFXSolutionProperties:Solution 2 Source" Version="1.0">
+        <class-type valType="String">CFXSolutionProperties</class-type>
+        <object-name valType="String">Solution 2 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Source", "DataLinks": {"$$72b80c49-e15e-4a1e-add3-5983282427f3": $$7e211a9e-9ecc-46de-83cc-0a76edd0e14d}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "CurrentResultsRef": $$bb24c1da-8bba-4f83-b97b-c472591462ce, "RunDirectory": "", "UpstreamExecutionControlCCL": "", "InitializationOption": "InitialConditions", "ExecutionControlOption": "IssueWarning", "HaveExecutionControlConflict": False, "LoadMResOptions": "LastConfigOnly", "FailedRun": None, "SolverPath": "", "SolverArguments": "", "ExecutionControlCCL": r"""&amp;replace SIMULATION CONTROL:
+  EXECUTION CONTROL:
+    EXECUTABLE SELECTION:
+      Double Precision = On
+    END
+    INTERPOLATOR STEP CONTROL:
+      Runtime Priority = Standard
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+    END
+    PARTITIONER STEP CONTROL:
+      Multidomain Option = Automatic
+      Runtime Priority = Standard
+      EXECUTABLE SELECTION:
+        Use Large Problem Partitioner = Off
+      END
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+      PARTITION SMOOTHING:
+        Maximum Partition Smoothing Sweeps = 100
+        Option = Smooth
+      END
+      PARTITIONING TYPE:
+        MeTiS Type = k-way
+        Option = MeTiS
+        Partition Size Rule = Automatic
+      END
+    END
+    RUN DEFINITION:
+      Run Mode = Full
+      Solver Input File = G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\CFX-1\CFX\CFX.def
+    END
+    SOLVER STEP CONTROL:
+      Runtime Priority = Standard
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+      PARALLEL ENVIRONMENT:
+        Number of Processes = 1
+        Start Method = Serial
+      END
+    END
+  END
+END
+""", "SolverCommandMode": "Foreground"}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Setup 3</DataSource1>
+          <EntityType1 valType="String">CFXSetup</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Solution 3/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": True, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 3/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 3/CFXSolution:Solution 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSolution</class-type>
+        <object-name valType="String">Solution 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Provider", "DataSourceRef": $$e060d73d-6aa9-4ecc-9eb8-88401a68d542, "DataConnections": {"5b27995b-24f3-40d2-a9ba-b310cdebb6b2": None}}</member-data>
+      </Object>
+      <Object Name="/Solution 3/CFXSolutionData:Solution 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSolutionData</class-type>
+        <object-name valType="String">Solution 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Provider", "DataSourceRef": $$e060d73d-6aa9-4ecc-9eb8-88401a68d542, "DataConnections": {}}</member-data>
+      </Object>
+      <Object Name="/Solution 3/CFXSetupDataLink:Setup 2 Provider" Version="1.0">
+        <class-type valType="String">CFXSetupDataLink</class-type>
+        <object-name valType="String">Setup 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 2 Provider", "Entity": $$72b80c49-e15e-4a1e-add3-5983282427f3, "DataType": None, "ConnectionKey": "e9bdb1f2-a993-4de5-bb3c-48a67b9a2c7d", "RefreshTimestamp": 6473}</member-data>
+      </Object>
+      <Object Name="/Solution 3/CFXSolverRun:CFX_001" Version="1.0">
+        <class-type valType="String">CFXSolverRun</class-type>
+        <object-name valType="String">CFX_001</object-name>
+        <member-data valType="String">{"DisplayText": "CFX_001", "ResultsFile": None, "OutFile": $$a6c2827f-2396-42fd-8093-ed742f883cfa, "ExtendedFiles": [$$810e017e-c8d8-4a58-b6d2-88ec7dc6b7d2], "ANSYSFile": None, "ANSYSRestartDB": None, "RunStatus": "Error", "Imported": False}</member-data>
+      </Object>
+      <Object Name="/Solution 3/CFXSolverRun:CFX_002" Version="1.0">
+        <class-type valType="String">CFXSolverRun</class-type>
+        <object-name valType="String">CFX_002</object-name>
+        <member-data valType="String">{"DisplayText": "CFX_002", "ResultsFile": $$b0e8cf0b-e15e-4748-b970-fd7e46ed7978, "OutFile": $$006a1e49-dd18-4753-bc09-ca2b74287db6, "ExtendedFiles": [], "ANSYSFile": None, "ANSYSRestartDB": None, "RunStatus": "Normal", "Imported": False}</member-data>
+      </Object>
+      <Object Name="/Solution 3/SolutionSettings2:SolutionSettings" Version="1.0">
+        <class-type valType="String">Ansys.JobManager.Data.SolutionSettingsEntity, Ans.JobManager</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.JobManager.Data.SolutionSettingsTypeSpec, Ans.JobManager", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "JournalVariableName": "solutionSettings2", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": True, "Constraints": None}, "UpdateOption": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": "Foreground", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Update Option", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Run in Foreground, Run in Background, Submit to Remote Solve Manager", "Options": "Foreground, Background, RemoteSolveManager", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "SolveManager": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "localhost", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Solve Manager", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": True, "OptionIcons": None, "OptionLabels": "localhost", "Options": "localhost", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "Queue": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Local", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Queue", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "EnablePolling": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": True, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Download Progress Information", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "OptionLabels": None}, "PollingInterval": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "120 [s]", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Progress Download Interval", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": "1.79769313486231E+308 [s]", "Min": "0 [s]", "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Time"}, "ExecutionMode": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Serial", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Execution Mode", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Serial, Parallel", "Options": "Serial, Parallel", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "NumberOfProcesses": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager' and ExecutionMode == 'Parallel'", "Default": 2, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Number of Processes", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": None, "Min": 2, "UndefinedValue": 2147483647}, "RsmUserString": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": None, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "User String (Beta)", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None}}, "DataTypeHierarchy": "SolutionSettings2,SolutionSettings,DataEntity"}</type-spec>
+        <object-name valType="String">SolutionSettings</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionSettings", "UpdateOption": "Foreground", "SolveManager": "localhost", "Queue": "Local", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Serial", "NumberOfProcesses": 2, "RsmUserString": None}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 3" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">7082</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7070, "Input": 7081, "Output": 4878}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6111, "Solution 2": 0, "Results 2": 5850, "Solution 3": 6544, "Results 3": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX-1</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results 3/CFDResults:Results 2 Source" Version="1.0">
+        <class-type valType="String">CFDResults</class-type>
+        <object-name valType="String">Results 2 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Results 2 Source", "DataLinks": {"$$14a9a701-110f-4927-b7d6-47293c0c6240": $$b425170e-4b8b-4efe-8322-9b1112253a1f}, "UpstreamContainersRemovedSinceRefresh": False, "State": "EditRequired", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": $$f75da403-6577-443d-99c2-72368e9567fb, "_reportFiles": None, "_htmlReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 2}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Solution 3</DataSource1>
+          <EntityType1 valType="String">CFXSolution</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results 3/CFDAnalysis:Results 2 Provider" Version="1.0">
+        <class-type valType="String">CFDAnalysis</class-type>
+        <object-name valType="String">Results 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Results 2 Provider", "DataSourceRef": $$eb5190da-216e-43cb-9ffd-0a7cb1a802b9}</member-data>
+      </Object>
+      <Object Name="/Results 3/SolutionDataLink:Solution 2 Provider" Version="1.0">
+        <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">Solution 2 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 2 Provider", "Entity": $$14a9a701-110f-4927-b7d6-47293c0c6240, "DataType": "CFXSolution", "ConnectionKey": "5b27995b-24f3-40d2-a9ba-b310cdebb6b2", "RefreshTimestamp": 6544, "ID": 1, "SecondID": 2, "DataEntityType": "CFXSolution", "SystemName": "non isen", "LastFilename": {"CFXSolution": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\CFX-1\CFX\CFX_002.res"}}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Setup 4" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSetupContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6879</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7067, "Input": 6878, "Output": 6770}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6621, "Solution 2": 6683, "Results 2": 6747, "Solution 3": 6544, "Results 3": 6608, "Setup 4": 0, "Solution 4": 0, "Results 4": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX-2</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Setup 4/CFXSetupProperties:Setup 4 Source" Version="1.0">
+        <class-type valType="String">CFXSetupProperties</class-type>
+        <object-name valType="String">Setup 4 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 4 Source", "DataLinks": {"$$6772c55c-c56d-420b-a1ae-39ac50b6db7c": $$a159f5e0-49e6-480a-93e9-bf7f4e33b9c6}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "DEFFileTimeStamp": 6879, "SolverInputExtendedFiles": None, "CachedANSYSInputFile": None, "PhysicsStatus": "", "AllowAssemblyMeshImport": False, "PhysicsErrSuppressEnabled": False, "PhysicsStatusSummary": "", "ANSYSInputPendingDelete": False, "DeletedMeshIDs": [], "NextMeshID": 2, "SolverInputFile": $$3f90ab1e-0423-4474-bd47-1faa15b50f6a, "CaseFile": $$2b0a56c8-1077-4df5-9b00-5672d1b52899}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Mesh 2</DataSource1>
+          <EntityType1 valType="String">SimulationGeneratedMesh</EntityType1>
+          <DataSource2 valType="String">Setup 4</DataSource2>
+          <EntityType2 valType="String">SimulationGeneratedMesh</EntityType2>
+          <DataSource3 valType="String">Setup 4</DataSource3>
+          <EntityType3 valType="String">CFXMesh</EntityType3>
+          <DataSource4 valType="String">Setup 4</DataSource4>
+          <EntityType4 valType="String">MechanicalSetup</EntityType4>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String, "DataSource2": System.String, "EntityType2": System.String, "DataSource3": System.String, "EntityType3": System.String, "DataSource4": System.String, "EntityType4": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Setup 4/CFXSetup:Setup 4 Provider" Version="1.0">
+        <class-type valType="String">CFXSetup</class-type>
+        <object-name valType="String">Setup 4 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 4 Provider", "DataSourceRef": $$859b528f-e673-4f63-8a8e-c66d7b35b950, "DataConnections": {"f1e48413-d484-446a-9bd3-411c1374c67b": None}, "CFXSolverInputFile": $$3f90ab1e-0423-4474-bd47-1faa15b50f6a, "MAPDLSolverInputFile": None}</member-data>
+      </Object>
+      <Object Name="/Setup 4/SystemCouplingSetupData:Setup Coupling Data" Version="1.0">
+        <class-type valType="String">SystemCouplingSetupData</class-type>
+        <object-name valType="String">Setup Coupling Data</object-name>
+        <member-data valType="String">{"DisplayText": "Setup Coupling Data", "DataConnections": [], "TransferDataObject": None}</member-data>
+      </Object>
+      <Object Name="/Setup 4/PersistedSystemCouplingData:PersistedSystemCouplingData" Version="1.0">
+        <class-type valType="String">PersistedSystemCouplingData</class-type>
+        <object-name valType="String">PersistedSystemCouplingData</object-name>
+        <member-data valType="String">{"DisplayText": "PersistedSystemCouplingData", "Xml": ""}</member-data>
+      </Object>
+      <Object Name="/Setup 4/CFXMeshDataLink:MeshingMeshDataObject" Version="1.0">
+        <class-type valType="String">CFXMeshDataLink</class-type>
+        <object-name valType="String">MeshingMeshDataObject</object-name>
+        <member-data valType="String">{"DisplayText": "MeshingMeshDataObject", "Entity": $$6772c55c-c56d-420b-a1ae-39ac50b6db7c, "DataType": "CMDBMesh", "ConnectionKey": "2a9629a0-fe76-464a-ab1a-5b84e855ada8", "RefreshTimestamp": 5288, "ID": 1}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Solution 4" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFXCore.CFXCoreAddin:CFXSolutionContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">6937</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 6977, "Input": 6796, "Output": 6785}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6621, "Solution 2": 6683, "Results 2": 6747, "Solution 3": 6544, "Results 3": 6608, "Setup 4": 6879, "Solution 4": 0, "Results 4": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX-2</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Solution 4/CFXSolutionProperties:Solution 4 Source" Version="1.0">
+        <class-type valType="String">CFXSolutionProperties</class-type>
+        <object-name valType="String">Solution 4 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 4 Source", "DataLinks": {"$$f904a322-f8c4-4823-a520-c9dfd9789951": $$335caff2-ebf8-4bdc-98c3-908616247546}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "CurrentResultsRef": $$6664906f-94d1-4363-be78-7199cbc512ea, "RunDirectory": "", "UpstreamExecutionControlCCL": "", "InitializationOption": "CurrentSolutionData", "ExecutionControlOption": "IssueWarning", "HaveExecutionControlConflict": False, "LoadMResOptions": "LastConfigOnly", "FailedRun": None, "SolverPath": "", "SolverArguments": "", "ExecutionControlCCL": r"""&amp;replace SIMULATION CONTROL:
+  EXECUTION CONTROL:
+    EXECUTABLE SELECTION:
+      Double Precision = On
+    END
+    INTERPOLATOR STEP CONTROL:
+      Runtime Priority = Standard
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+    END
+    PARTITIONER STEP CONTROL:
+      Multidomain Option = Automatic
+      Runtime Priority = Standard
+      EXECUTABLE SELECTION:
+        Use Large Problem Partitioner = Off
+      END
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+      PARTITION SMOOTHING:
+        Maximum Partition Smoothing Sweeps = 100
+        Option = Smooth
+      END
+      PARTITIONING TYPE:
+        MeTiS Type = k-way
+        Option = MeTiS
+        Partition Size Rule = Automatic
+      END
+    END
+    RUN DEFINITION:
+      Run Mode = Full
+      Solver Input File = G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\CFX-2\CFX\Isentropic.def
+    END
+    SOLVER STEP CONTROL:
+      Runtime Priority = Standard
+      MEMORY CONTROL:
+        Memory Allocation Factor = 1.0
+      END
+      PARALLEL ENVIRONMENT:
+        Number of Processes = 1
+        Start Method = Serial
+      END
+    END
+  END
+END
+""", "SolverCommandMode": "Foreground"}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Setup 4</DataSource1>
+          <EntityType1 valType="String">CFXSetup</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Solution 4/SolutionSettings:SolutionSettings" Version="1.0">
+        <class-type valType="String">Ansys.JobManager.Data.SolutionSettingsEntity, Ans.JobManager</class-type>
+        <type-spec valType="String">{"SpecType": "Ansys.JobManager.Data.SolutionSettingsTypeSpec, Ans.JobManager", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": None, "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "JournalVariableName": "solutionSettings", "Methods": {}, "Version": 1, "Members": {"DisplayText": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": None, "Exposure": "AnyUser", "Group": None, "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Display Text", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": True, "Constraints": None}, "UpdateOption": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": None, "Default": "Foreground", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Update Option", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Run in Foreground, Run in Background, Submit to Remote Solve Manager", "Options": "Foreground, Background, RemoteSolveManager", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "SolveManager": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "localhost", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Solve Manager", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": True, "OptionIcons": None, "OptionLabels": "localhost", "Options": "localhost", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "Queue": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Local", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Queue", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Local", "Options": "Local", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "EnablePolling": {"SpecType": "Ansys.Core.DataSpecs.BooleanSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": True, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Download Progress Information", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "OptionLabels": None}, "PollingInterval": {"SpecType": "Ansys.Core.DataSpecs.QuantitySpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "120 [s]", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Progress Download Interval", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": "1.79769313486231E+308 [s]", "Min": "0 [s]", "UndefinedValue": "1.79769313486231E+308", "QuantityName": "Time"}, "ExecutionMode": {"SpecType": "Ansys.Core.DataSpecs.OptionSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": "Serial", "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Execution Mode", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "IsMultiSelect": False, "AllowArbitraryInput": False, "OptionIcons": None, "OptionLabels": "Serial, Parallel", "Options": "Serial, Parallel", "OptionFeatureFlags": None, "OptionFilterFlags": None, "OptionLicenseFlags": None}, "NumberOfProcesses": {"SpecType": "Ansys.Core.DataSpecs.IntegerSpec`1[[System.Int32, mscorlib]], Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager' and ExecutionMode == 'Parallel'", "Default": 2, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "Number of Processes", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None, "Max": None, "Min": 2, "UndefinedValue": 2147483647}, "RsmUserString": {"SpecType": "Ansys.Core.DataSpecs.StringSpec, Ans.Core", "Access": "UserWritable", "Context": "UpdateOption == 'RemoteSolveManager'", "Default": None, "Exposure": "AnyUser", "Group": "Solution Process", "IsOptional": False, "IsPersistent": True, "IsReadOnly": False, "Label": "User String (Beta)", "Presentation": None, "Usage": "Extrinsic", "IsParameterizable": False, "ReuseJournalVariables": False, "Constraints": None}}, "DataTypeHierarchy": "SolutionSettings,DataEntity"}</type-spec>
+        <object-name valType="String">SolutionSettings</object-name>
+        <member-data valType="String">{"DisplayText": "SolutionSettings", "UpdateOption": "Foreground", "SolveManager": "localhost", "Queue": "Local", "EnablePolling": True, "PollingInterval": "120 [s]", "ExecutionMode": "Serial", "NumberOfProcesses": 2, "RsmUserString": None}</member-data>
+      </Object>
+      <Object Name="/Solution 4/ExpertProperties:ExpertProperties" Version="1.0">
+        <class-type valType="String">ExpertProperties</class-type>
+        <object-name valType="String">ExpertProperties</object-name>
+        <member-data valType="String">{"DisplayText": "ExpertProperties", "ImportantNote": "These options are visible because a development environment variable is set", "ExpertPropertiesString": "", "EnableDebug": False, "EnableValidation": False, "EnableTesting": False, "EnableErrorReporting": True, "EnableWarningReporting": True, "EnableInfoReporting": False, "EnableFileBasedCommunication": True, "EnableSocketCommunication": False, "EnableFailureCauseReporting": True}</member-data>
+      </Object>
+      <Object Name="/Solution 4/ComponentSettingsForRsmDpUpdate:ComponentSettingsForRsmDpUpdate" Version="1.0">
+        <class-type valType="String">ComponentSettingsForRsmDpUpdate</class-type>
+        <object-name valType="String">ComponentSettingsForRsmDpUpdate</object-name>
+        <member-data valType="String">{"DisplayText": "ComponentSettingsForRsmDpUpdate", "SerialOnly": False, "UseLimitOnNumberOfCores": False, "LimitOnNumberOfCores": 2}</member-data>
+      </Object>
+      <Object Name="/Solution 4/CFXSolution:Solution 4 Provider" Version="1.0">
+        <class-type valType="String">CFXSolution</class-type>
+        <object-name valType="String">Solution 4 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 4 Provider", "DataSourceRef": $$c8e11157-3f22-4b32-aa98-9a91733531a8, "DataConnections": {"01fe2841-b781-49b7-a1f5-077490e9d2e5": None}}</member-data>
+      </Object>
+      <Object Name="/Solution 4/CFXSolutionData:Solution 4 Provider" Version="1.0">
+        <class-type valType="String">CFXSolutionData</class-type>
+        <object-name valType="String">Solution 4 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 4 Provider", "DataSourceRef": $$c8e11157-3f22-4b32-aa98-9a91733531a8, "DataConnections": {}}</member-data>
+      </Object>
+      <Object Name="/Solution 4/CFXSetupDataLink:Setup 4 Provider" Version="1.0">
+        <class-type valType="String">CFXSetupDataLink</class-type>
+        <object-name valType="String">Setup 4 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Setup 4 Provider", "Entity": $$f904a322-f8c4-4823-a520-c9dfd9789951, "DataType": None, "ConnectionKey": "f1e48413-d484-446a-9bd3-411c1374c67b", "RefreshTimestamp": 6879}</member-data>
+      </Object>
+      <Object Name="/Solution 4/CFXSolverRun:Isentropic_001" Version="1.0">
+        <class-type valType="String">CFXSolverRun</class-type>
+        <object-name valType="String">Isentropic_001</object-name>
+        <member-data valType="String">{"DisplayText": "Isentropic_001", "ResultsFile": $$2151d043-46c0-4f65-8685-238258cfeb16, "OutFile": $$9347f713-5579-47f2-ac58-5390cf49efc8, "ExtendedFiles": [], "ANSYSFile": None, "ANSYSRestartDB": None, "RunStatus": "Normal", "Imported": False}</member-data>
+      </Object>
+    </Container>
+    <Container Name="Results 4" Version="1.0">
+      <container-type valType="String">Ansys.CFX.CFDPost.CFDPostAddin:CFDAnalysisContainer</container-type>
+      <storage-scheme-id valType="String">version-1-format</storage-scheme-id>
+      <deleted-sources valType="String">[]</deleted-sources>
+      <last-updated valType="Int64">7064</last-updated>
+      <last-modified-by-usage valType="String">{"Extrinsic": 7052, "Input": 7063, "Output": 6812}</last-modified-by-usage>
+      <outputs-generated-by-type valType="String">{}</outputs-generated-by-type>
+      <last-update-regen-times valType="String">{"Preferences": 0, "ToolbarExp": 0, "FileTypesContainer": 0, "FileContainer": 0, "Messages": 0, "Parameters": 0, "Schematic": 0, "ReportDataContainer": 0, "Graphics": 0, "Units": 0, "Scopes": 0, "Geometry": 2626, "Mesh": 6027, "Setup": 6091, "Solution": 6064, "Results": 3610, "Geometry 1": 4339, "Mesh 1": 3469, "Setup 1": 3551, "Solution 1": 3556, "Results 1": 0, "Setup 3": 6473, "Mesh 2": 5288, "Setup 2": 6621, "Solution 2": 6683, "Results 2": 6747, "Solution 3": 6544, "Results 3": 6608, "Setup 4": 6879, "Solution 4": 6937, "Results 4": 0}</last-update-regen-times>
+      <unique-system-dir valType="String">CFX-2</unique-system-dir>
+      <contains-significant-data valType="Boolean">true</contains-significant-data>
+      <Object Name="/Results 4/CFDResults:Results 4 Source" Version="1.0">
+        <class-type valType="String">CFDResults</class-type>
+        <object-name valType="String">Results 4 Source</object-name>
+        <member-data valType="String">{"DisplayText": "Results 4 Source", "DataLinks": {"$$5c3b10e7-4ae3-4b49-9f7d-97cec4542077": $$430912b7-8f5d-4506-84bc-03c4648fcf50}, "UpstreamContainersRemovedSinceRefresh": False, "State": "UpToDate", "ForceRefresh": False, "ExternalFileMap": {}, "InitCCL": None, "UseInitCCL": False, "PostStateFile": $$d2714c39-a956-4927-8559-5b5d14570754, "_reportFiles": None, "_htmlReportFile": None, "_xmlReportFile": None, "MRESLoadOptionsMsg": "See Solution component properties for multi-configuration options (CFX only).", "ClearState": False, "LoadReport": "None", "CustomReportTemplate": "", "RunSessionScript": False, "UpdateScriptCCL": "", "StateInitializationFile": "", "GenerateReport": False, "ReportName": "Report", "ReportLocationDirectory": "", "LastResultsID": 2}</member-data>
+        <custom-data>
+          <DataSource1 valType="String">Solution 4</DataSource1>
+          <EntityType1 valType="String">CFXSolution</EntityType1>
+          <value-keys valType="String">{"DataSource1": System.String, "EntityType1": System.String}</value-keys>
+        </custom-data>
+      </Object>
+      <Object Name="/Results 4/CFDAnalysis:Results 4 Provider" Version="1.0">
+        <class-type valType="String">CFDAnalysis</class-type>
+        <object-name valType="String">Results 4 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Results 4 Provider", "DataSourceRef": $$63c7f3d9-2473-47e8-9fdb-f706473f50f4}</member-data>
+      </Object>
+      <Object Name="/Results 4/SolutionDataLink:Solution 4 Provider" Version="1.0">
+        <class-type valType="String">SolutionDataLink</class-type>
+        <object-name valType="String">Solution 4 Provider</object-name>
+        <member-data valType="String">{"DisplayText": "Solution 4 Provider", "Entity": $$5c3b10e7-4ae3-4b49-9f7d-97cec4542077, "DataType": "CFXSolution", "ConnectionKey": "01fe2841-b781-49b7-a1f5-077490e9d2e5", "RefreshTimestamp": 6937, "ID": 1, "SecondID": 2, "DataEntityType": "CFXSolution", "SystemName": "Isentropic", "LastFilename": {"CFXSolution": r"G:\Kuliah\Tugas\Semester 10\CFD 2\CD Duct\2D CD duct_files\dp0\CFX-2\CFX\Isentropic_001.res"}}</member-data>
+      </Object>
+    </Container>
+  </Containers>
+</Storage>

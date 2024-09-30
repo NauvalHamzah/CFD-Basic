@@ -1,0 +1,310 @@
+@START@
+CURRENT TIMESTEP
+ACCUMULATED TIMESTEP
+FORCE,NORMAL,Default Fluid Fluid Interface Side 1,X-DIR
+FORCE,NORMAL,Default Fluid Fluid Interface Side 1,Y-DIR
+FORCE,NORMAL,Default Fluid Fluid Interface Side 1,Z-DIR
+FORCE,TANGENTIAL,Default Fluid Fluid Interface Side 1,X-DIR
+FORCE,TANGENTIAL,Default Fluid Fluid Interface Side 1,Y-DIR
+FORCE,TANGENTIAL,Default Fluid Fluid Interface Side 1,Z-DIR
+MOMENT,NORMAL,Default Fluid Fluid Interface Side 1,X-DIR
+MOMENT,NORMAL,Default Fluid Fluid Interface Side 1,Y-DIR
+MOMENT,NORMAL,Default Fluid Fluid Interface Side 1,Z-DIR
+MOMENT,TANGENTIAL,Default Fluid Fluid Interface Side 1,X-DIR
+MOMENT,TANGENTIAL,Default Fluid Fluid Interface Side 1,Y-DIR
+MOMENT,TANGENTIAL,Default Fluid Fluid Interface Side 1,Z-DIR
+FORCE,NORMAL,Default Fluid Fluid Interface Side 2,X-DIR
+FORCE,NORMAL,Default Fluid Fluid Interface Side 2,Y-DIR
+FORCE,NORMAL,Default Fluid Fluid Interface Side 2,Z-DIR
+FORCE,TANGENTIAL,Default Fluid Fluid Interface Side 2,X-DIR
+FORCE,TANGENTIAL,Default Fluid Fluid Interface Side 2,Y-DIR
+FORCE,TANGENTIAL,Default Fluid Fluid Interface Side 2,Z-DIR
+MOMENT,NORMAL,Default Fluid Fluid Interface Side 2,X-DIR
+MOMENT,NORMAL,Default Fluid Fluid Interface Side 2,Y-DIR
+MOMENT,NORMAL,Default Fluid Fluid Interface Side 2,Z-DIR
+MOMENT,TANGENTIAL,Default Fluid Fluid Interface Side 2,X-DIR
+MOMENT,TANGENTIAL,Default Fluid Fluid Interface Side 2,Y-DIR
+MOMENT,TANGENTIAL,Default Fluid Fluid Interface Side 2,Z-DIR
+FORCE,NORMAL,Wall,X-DIR
+FORCE,NORMAL,Wall,Y-DIR
+FORCE,NORMAL,Wall,Z-DIR
+FORCE,TANGENTIAL,Wall,X-DIR
+FORCE,TANGENTIAL,Wall,Y-DIR
+FORCE,TANGENTIAL,Wall,Z-DIR
+MOMENT,NORMAL,Wall,X-DIR
+MOMENT,NORMAL,Wall,Y-DIR
+MOMENT,NORMAL,Wall,Z-DIR
+MOMENT,TANGENTIAL,Wall,X-DIR
+MOMENT,TANGENTIAL,Wall,Y-DIR
+MOMENT,TANGENTIAL,Wall,Z-DIR
+RESIDUAL,RMS,Default Domain,U-Mom,Momentum and Mass
+RESIDUAL,MAX,Default Domain,U-Mom,Momentum and Mass
+RESIDUAL,RMS,Default Domain,V-Mom,Momentum and Mass
+RESIDUAL,MAX,Default Domain,V-Mom,Momentum and Mass
+RESIDUAL,RMS,Default Domain,W-Mom,Momentum and Mass
+RESIDUAL,MAX,Default Domain,W-Mom,Momentum and Mass
+RESIDUAL,RMS,Default Domain,P-Mass,Momentum and Mass
+RESIDUAL,MAX,Default Domain,P-Mass,Momentum and Mass
+COMBINED,RESIDUAL,RMS,U-Mom,Momentum and Mass
+COMBINED,RESIDUAL,MAX,U-Mom,Momentum and Mass
+COMBINED,RESIDUAL,RMS,V-Mom,Momentum and Mass
+COMBINED,RESIDUAL,MAX,V-Mom,Momentum and Mass
+COMBINED,RESIDUAL,RMS,W-Mom,Momentum and Mass
+COMBINED,RESIDUAL,MAX,W-Mom,Momentum and Mass
+COMBINED,RESIDUAL,RMS,P-Mass,Momentum and Mass
+COMBINED,RESIDUAL,MAX,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Inlet,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Outlet,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Wall,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Wall,U-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),U-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),U-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),U-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Inlet,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Outlet,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Wall,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Wall,V-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),V-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),V-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),V-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Inlet,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Outlet,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Wall,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Wall,W-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),W-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),W-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),W-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Inlet,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Outlet,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Wall,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Wall,P-Mass,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),P-Mass,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),P-Mass,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),P-Mass,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),P-Mass,Momentum and Mass
+IMBALANCE,Default Domain,U-Mom,Momentum and Mass
+IMBALANCE,Default Domain,V-Mom,Momentum and Mass
+IMBALANCE,Default Domain,W-Mom,Momentum and Mass
+IMBALANCE,Default Domain,P-Mass,Momentum and Mass
+RESIDUAL,RMS,Default Domain,H-Energy,Heat Transfer
+RESIDUAL,MAX,Default Domain,H-Energy,Heat Transfer
+COMBINED,RESIDUAL,RMS,H-Energy,Heat Transfer
+COMBINED,RESIDUAL,MAX,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Inlet,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Outlet,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Wall,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Inlet,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Outlet,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Wall,H-Energy,Heat Transfer
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),H-Energy,Heat Transfer
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),H-Energy,Heat Transfer
+SOURCE,DOMAIN,Default Domain (Neg),H-Energy,Heat Transfer
+SOURCE,DOMAIN,Default Domain (Pos),H-Energy,Heat Transfer
+IMBALANCE,Default Domain,H-Energy,Heat Transfer
+RESIDUAL,RMS,Default Domain,K-TurbKE,TurbKE and Diss.K
+RESIDUAL,MAX,Default Domain,K-TurbKE,TurbKE and Diss.K
+COMBINED,RESIDUAL,RMS,K-TurbKE,TurbKE and Diss.K
+COMBINED,RESIDUAL,MAX,K-TurbKE,TurbKE and Diss.K
+RESIDUAL,RMS,Default Domain,E-Diss.K,TurbKE and Diss.K
+RESIDUAL,MAX,Default Domain,E-Diss.K,TurbKE and Diss.K
+COMBINED,RESIDUAL,RMS,E-Diss.K,TurbKE and Diss.K
+COMBINED,RESIDUAL,MAX,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Inlet,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Outlet,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Wall,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Inlet,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Outlet,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Wall,K-TurbKE,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),K-TurbKE,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),K-TurbKE,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Neg),K-TurbKE,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Pos),K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Inlet,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Outlet,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Wall,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Inlet,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Outlet,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Wall,E-Diss.K,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),E-Diss.K,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),E-Diss.K,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Neg),E-Diss.K,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Pos),E-Diss.K,TurbKE and Diss.K
+@GROUP START@ Momentum and Mass
+RESIDUAL,RMS,Default Domain,U-Mom,Momentum and Mass
+RESIDUAL,MAX,Default Domain,U-Mom,Momentum and Mass
+RESIDUAL,RMS,Default Domain,V-Mom,Momentum and Mass
+RESIDUAL,MAX,Default Domain,V-Mom,Momentum and Mass
+RESIDUAL,RMS,Default Domain,W-Mom,Momentum and Mass
+RESIDUAL,MAX,Default Domain,W-Mom,Momentum and Mass
+RESIDUAL,RMS,Default Domain,P-Mass,Momentum and Mass
+RESIDUAL,MAX,Default Domain,P-Mass,Momentum and Mass
+COMBINED,RESIDUAL,RMS,U-Mom,Momentum and Mass
+COMBINED,RESIDUAL,MAX,U-Mom,Momentum and Mass
+COMBINED,RESIDUAL,RMS,V-Mom,Momentum and Mass
+COMBINED,RESIDUAL,MAX,V-Mom,Momentum and Mass
+COMBINED,RESIDUAL,RMS,W-Mom,Momentum and Mass
+COMBINED,RESIDUAL,MAX,W-Mom,Momentum and Mass
+COMBINED,RESIDUAL,RMS,P-Mass,Momentum and Mass
+COMBINED,RESIDUAL,MAX,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Inlet,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Outlet,U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Wall,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,U-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Wall,U-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),U-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),U-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),U-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),U-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Inlet,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Outlet,V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Wall,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,V-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Wall,V-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),V-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),V-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),V-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),V-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Inlet,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Outlet,W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Wall,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,W-Mom,Momentum and Mass
+SOURCE,BOUNDARY,Wall,W-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),W-Mom,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),W-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),W-Mom,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),W-Mom,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Inlet,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Outlet,P-Mass,Momentum and Mass
+FLOW,BOUNDARY,Wall,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Inlet,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Outlet,P-Mass,Momentum and Mass
+SOURCE,BOUNDARY,Wall,P-Mass,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),P-Mass,Momentum and Mass
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),P-Mass,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Neg),P-Mass,Momentum and Mass
+SOURCE,DOMAIN,Default Domain (Pos),P-Mass,Momentum and Mass
+IMBALANCE,Default Domain,U-Mom,Momentum and Mass
+IMBALANCE,Default Domain,V-Mom,Momentum and Mass
+IMBALANCE,Default Domain,W-Mom,Momentum and Mass
+IMBALANCE,Default Domain,P-Mass,Momentum and Mass
+@GROUP END@
+@GROUP START@ Heat Transfer
+RESIDUAL,RMS,Default Domain,H-Energy,Heat Transfer
+RESIDUAL,MAX,Default Domain,H-Energy,Heat Transfer
+COMBINED,RESIDUAL,RMS,H-Energy,Heat Transfer
+COMBINED,RESIDUAL,MAX,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Inlet,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Outlet,H-Energy,Heat Transfer
+FLOW,BOUNDARY,Wall,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Inlet,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Outlet,H-Energy,Heat Transfer
+SOURCE,BOUNDARY,Wall,H-Energy,Heat Transfer
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),H-Energy,Heat Transfer
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),H-Energy,Heat Transfer
+SOURCE,DOMAIN,Default Domain (Neg),H-Energy,Heat Transfer
+SOURCE,DOMAIN,Default Domain (Pos),H-Energy,Heat Transfer
+IMBALANCE,Default Domain,H-Energy,Heat Transfer
+@GROUP END@
+@GROUP START@ TurbKE and Diss.K
+RESIDUAL,RMS,Default Domain,K-TurbKE,TurbKE and Diss.K
+RESIDUAL,MAX,Default Domain,K-TurbKE,TurbKE and Diss.K
+COMBINED,RESIDUAL,RMS,K-TurbKE,TurbKE and Diss.K
+COMBINED,RESIDUAL,MAX,K-TurbKE,TurbKE and Diss.K
+RESIDUAL,RMS,Default Domain,E-Diss.K,TurbKE and Diss.K
+RESIDUAL,MAX,Default Domain,E-Diss.K,TurbKE and Diss.K
+COMBINED,RESIDUAL,RMS,E-Diss.K,TurbKE and Diss.K
+COMBINED,RESIDUAL,MAX,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Inlet,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Outlet,K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Wall,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Inlet,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Outlet,K-TurbKE,TurbKE and Diss.K
+SOURCE,BOUNDARY,Wall,K-TurbKE,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),K-TurbKE,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),K-TurbKE,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Neg),K-TurbKE,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Pos),K-TurbKE,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 1,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Default Fluid Fluid Interface Side 2,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Inlet,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Outlet,E-Diss.K,TurbKE and Diss.K
+FLOW,BOUNDARY,Wall,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 1,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Default Fluid Fluid Interface Side 2,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Inlet,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Outlet,E-Diss.K,TurbKE and Diss.K
+SOURCE,BOUNDARY,Wall,E-Diss.K,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 1),E-Diss.K,TurbKE and Diss.K
+FLOW,DOMAIN INTERFACE,Default Fluid Fluid Interface (Side 2),E-Diss.K,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Neg),E-Diss.K,TurbKE and Diss.K
+SOURCE,DOMAIN,Default Domain (Pos),E-Diss.K,TurbKE and Diss.K
+IMBALANCE,Default Domain,K-TurbKE,TurbKE and Diss.K
+IMBALANCE,Default Domain,E-Diss.K,TurbKE and Diss.K
+@GROUP END@
+@END@
